@@ -12,7 +12,7 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | Đào Vũ Minh Khánh | 2A202603878 | Nhóm trưởng | https://github.com/iamdvmk |
+| 1 | Đào Vũ Minh Khánh | 2A202603878 | Nhóm trưởng, phụ trách quy trình | https://github.com/iamdvmk |
 | 2 | Nguyễn Long Vũ | 2A202603842 | Điều phối thời gian, tổng hợp nội dung | https://github.com/mhoo40 |
 | 3 | Đỗ Quốc Khánh | 2A202603823 | Phụ trách research | https://github.com/dqk2210 |
 | 4 | Vương Trường Giang | 2A202603834 | Người phản biện chính | https://github.com/vtgiang213 |
@@ -38,33 +38,6 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
 
 ### DaoVuMinhKhanh-2A202603878
-
-**Phần việc phụ trách:**
-
-- Điều phối tiến độ và thời gian làm việc của nhóm.
-- Tổng hợp ý kiến, ghi chép kết quả thảo luận.
-- Phụ trách hội tụ nhóm tại CP3.
-- Viết Problem Statement v0.
-
-**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
-
-- Tổng hợp các ý tưởng và nhóm thành các Cluster.
-- Hỗ trợ xây dựng cây OST và bảng chấm điểm.
-- Soạn thảo Problem Statement v0.
-- Theo dõi tiến độ hoàn thành các checkpoint.
-
-**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
-
-- Nội dung CP3 và CP5 trong group_report.md.
-- Các file liên quan trong report/assets/.
-- Commit ghi nhận phần tổng hợp và Problem Statement.
-
-**Điều mình học được từ phần nhóm:**
-
-- Học cách điều phối thảo luận và thống nhất ý kiến.
-- Biết cách chuyển các ý tưởng rời rạc thành vấn đề cụ thể.
-
-### VuongTruongGiang-2A202603834
 
 **Phần việc phụ trách:**
 
