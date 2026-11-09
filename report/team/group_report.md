@@ -116,9 +116,9 @@ Tổng hợp:
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| **STACK (kiểm thử các biến thể của một bài Toán)** | [Quy trình tạo bài](https://docs.stack-assessment.org/en/STACK_question_admin/Authoring_workflow/) · [Kiểm thử biến thể](https://docs.stack-assessment.org/en/STACK_question_admin/Deploying/) | Bước 2, 3 và 5. Đối chiếu đề, lời giải mẫu và kết quả khi thay số. | Sát nhất với cấu trúc label. STACK cho phép tạo trước nhiều biến thể, chạy cùng bộ test trên từng biến thể và mở lại trường hợp bị lỗi. | Test chỉ kiểm tra những điều kiện đã khai báo. Auditor vẫn cần đọc lập luận trong lời giải. | Khi gửi feedback, ghi rõ bộ số liệu gây lỗi và dòng lời giải bị sai để Expert tái hiện được. |
+| **Hypothesis (kiểm thử code sinh biến)** | [Tài liệu Hypothesis](https://hypothesis.readthedocs.io/en/latest/tutorial/introduction.html) | Bước 5–6. Tìm bộ giá trị khiến một điều kiện của bài toán bị vi phạm. | Có thể tìm phản ví dụ. Chẳng hạn, nếu lời giải luôn chia hai vế cho `a`, cần kiểm tra liệu code có thể sinh `a = 0` hay không. | Đây là thư viện Python. Khả năng dùng trực tiếp phụ thuộc ngôn ngữ nội bộ và điều kiện mà nhóm đưa vào test. | Với mỗi phép biến đổi có điều kiện, đối chiếu điều kiện đó với miền giá trị mà code thực sự có thể sinh. |
+| **MathDebugger (phân loại lỗi trong đề và lời giải)** | [Trang nghiên cứu MathDebugger](https://haolpku.github.io/MathDebugger/) | Bước 2, 3 và 6. Xác định lỗi nằm ở giả thiết của đề hay ở một bước suy luận, tính toán hoặc biểu đạt trong lời giải. | Kiểm tra cả chuỗi lập luận, kể cả khi đáp án cuối trông hợp lý. | Đây là bộ đánh giá nghiên cứu trên dữ liệu Toán tổng hợp. Khả năng xử lý code sinh biến của công ty chưa được kiểm chứng. | Feedback nên chỉ ra bước sai đầu tiên, lý do sai và bộ số liệu minh họa nếu lỗi phụ thuộc vào giá trị biến. |
 
 ---
 
