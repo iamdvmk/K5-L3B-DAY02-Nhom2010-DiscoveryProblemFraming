@@ -34,9 +34,9 @@ Lăng kính dùng để scan: Lặp lại, Tốn thời gian, Cần đọc và t
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | Tổng hợp tài liệu ôn thi cuối kỳ (dòng 6) | Mình gặp mỗi đợt thi nên tự tin kể lại quy trình rõ nhất, số giờ mất đo được bằng bấm giờ, mà bạn bè quanh lớp ai cũng ôn thi nên sau này dễ tìm người kiểm chứng | Chưa chắc bước mất thời gian nhất của người khác có giống mình không, và mọi người đã thử cách gộp tài liệu nào chưa |
-| 2 | Đuổi tiến độ nhóm project (dòng 7) | Đợt project vừa xong nên còn nhớ rõ từng bước làm, bottleneck nằm hẳn ở bước nhắn tin hỏi và chờ từng người, dễ đo bằng đếm tin nhắn | Chưa chắc tình trạng này phổ biến hay chỉ nhóm mình bị, và người khác có coi đó là vấn đề đáng giải không |
-| 3 | Đọc paper nghiên cứu khoa học (dòng 5) | Là việc khó nhất trong ba cái nên nếu giải được thì giá trị cao, mình đang gặp nên biết rõ khó nằm ở đoạn nào | Chưa chắc mấy bạn khác có phải đọc paper thường xuyên không, nếu ít người gặp thì kiểm chứng sẽ khó hơn hai cái trên |
+| 1 | Tổng hợp tài liệu ôn thi cuối kỳ | Mình gặp mỗi đợt thi nên tự tin kể lại quy trình rõ nhất, số giờ mất đo được bằng bấm giờ, mà bạn bè quanh lớp ai cũng ôn thi nên sau này dễ tìm người kiểm chứng | Chưa chắc bước mất thời gian nhất của người khác có giống mình không, và mọi người đã thử cách gộp tài liệu nào chưa |
+| 2 | Đuổi tiến độ nhóm project | Đợt project vừa xong nên còn nhớ rõ từng bước làm, bottleneck nằm hẳn ở bước nhắn tin hỏi và chờ từng người, dễ đo bằng đếm tin nhắn | Chưa chắc tình trạng này phổ biến hay chỉ nhóm mình bị, và người khác có coi đó là vấn đề đáng giải không |
+| 3 | Đọc paper nghiên cứu khoa học | Là việc khó nhất trong ba cái nên nếu giải được thì giá trị cao, mình đang gặp nên biết rõ khó nằm ở đoạn nào | Chưa chắc mấy bạn khác có phải đọc paper thường xuyên không, nếu ít người gặp thì kiểm chứng sẽ khó hơn hai cái trên |
 
 ### Problem Card #1
 
