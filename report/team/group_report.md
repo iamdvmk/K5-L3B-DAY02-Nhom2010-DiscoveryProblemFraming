@@ -18,13 +18,13 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | Minh Khánh | Khi chuẩn bị CV để ứng tuyển nhiều vị trí, tôi muốn chỉnh sửa CV nhanh theo từng JD để không phải viết lại gần như từ đầu cho mỗi công việc. | Người ứng tuyển nhiều công ty trong cùng một khoảng thời gian. | Tốn 15-20 phút sửa mỗi CV | Nhu cầu thực sự đến đâu? |
+| 1 | Minh Khánh | Khi chuẩn bị CV để ứng tuyển nhiều vị trí, tôi muốn chỉnh sửa CV nhanh theo từng JD để không phải viết lại gần như từ đầu cho mỗi công việc. | Người ứng tuyển nhiều công ty trong cùng một khoảng thời gian. | Tốn 15-20 phút sửa mỗi CV | Ứng viên có thường xuyên chỉnh CV cho từng JD không? Mỗi tuần họ làm việc này bao nhiêu lần? |
 | 2 | Minh Khánh | Khi muốn mua một sản phẩm, tôi muốn hiểu nhanh sản phẩm nào phù hợp với nhu cầu để không phải đọc hàng chục bài review. | Người tiêu dùng thường xuyên mua hàng qua mạng | Tốn 15-20 phút đọc, xem review qua nhiều kênh khác nhau | |
-| 3 | Minh Khánh | Khi tự học một môn có nhiều kiến thức và deadline, tôi muốn có cách theo dõi những nội dung đã học và chưa hiểu để không phải liên tục xem lại toàn bộ tài liệu. | Người học đang ôn tập, chuẩn bị lượng lớn kiến thức | Tốn 5-15 phút tùy nội dung cần ôn tập | Khó đánh giá phần kiến thức nào là chưa hiểu hoặc chưa biết ? |
-| 4 | Vũ | Khi làm dự án, tôi muốn tổng hợp tài liệu để hiểu cách làm sản phẩm. | Intern tìm thông tin, Senior/Lead đưa tài liệu | 40-85 phút / dự án | Đã có nhiều giải pháp có sẵn ? |
+| 3 | Minh Khánh | Khi tự học một môn có nhiều kiến thức và deadline, tôi muốn có cách theo dõi những nội dung đã học và chưa hiểu để không phải liên tục xem lại toàn bộ tài liệu. | Người học đang ôn tập, chuẩn bị lượng lớn kiến thức | Tốn 5-15 phút tùy nội dung cần ôn tập | Người học hiện xác định phần mình chưa hiểu bằng cách nào? |
+| 4 | Vũ | Khi làm dự án, tôi muốn tổng hợp tài liệu để hiểu cách làm sản phẩm. | Intern tìm thông tin, Senior/Lead đưa tài liệu | 40-85 phút / dự án | Intern đang dùng công cụ hoặc cách nào để tổng hợp tài liệu? Những cách đó còn bất tiện ở đâu? |
 | 5 | Vũ | Khi tài liệu công ty được cập nhật, tôi muốn biết phần nào thay đổi so với bản cũ, để không làm theo thông tin lỗi thời.| Intern và Developers được quan sát kiểm tra thông tin | "35 - 60 phút / mỗi lần công ty thay đổi thông tin"| |
 | 6 | Vũ | Khi được giao một tài liệu dài, tôi muốn nắm phần liên quan đến task của mình, để bắt tay làm mà không phải đọc hết. | Các Intern khi tìm hiểu tài liệu được giao | khoảng 30-60 phút / lần | |
-| 7 | Quốc Khánh | Khi nhận đề tài nghiên cứu khoa học, tôi muốn nắm được ý chính và cách làm của paper tiếng Anh dài hàng chục trang, để biết được phương pháp và kết quả mà không phải đọc dính từng trang một| Sinh viên làm nghiên cứu khoa học hoặc tự tìm hiểu chủ đề mới | Một paper 10 đến 20 trang mất khoảng 1 đến 2 tiếng mới đọc hiểu, mỗi tuần phải đọc vài paper, nhiều bài phải đọc lại 2 đến 3 lần vì quên mất chi tiết | Đã có giải pháp ? |
+| 7 | Quốc Khánh | Khi nhận đề tài nghiên cứu khoa học, tôi muốn nắm được ý chính và cách làm của paper tiếng Anh dài hàng chục trang, để biết được phương pháp và kết quả mà không phải đọc dính từng trang một| Sinh viên làm nghiên cứu khoa học hoặc tự tìm hiểu chủ đề mới | Một paper 10 đến 20 trang mất khoảng 1 đến 2 tiếng mới đọc hiểu, mỗi tuần phải đọc vài paper, nhiều bài phải đọc lại 2 đến 3 lần vì quên mất chi tiết | Các công cụ tóm tắt paper hiện có giúp người đọc hiểu phương pháp và kết quả đến mức nào? Phần nào vẫn phải tự đọc kỹ? |
 | 8 | Quốc Khánh |  Khi kỳ thi kết thúc môn học sắp đến, tôi muốn chọn lọc được những phần quan trọng nhất đã học trong kỳ về cùng một chỗ, để ôn thi có trọng tâm thay vì mở lại từng slide từ đầu| Sinh viên ôn thi cuối kỳ | Mỗi môn thi mất khoảng 3 đến 4 buổi tối để gom và chép lại phần quan trọng; bước nặng nhất là đọc lại toàn bộ slide để tự đoán phần nào ra thi rồi gõ lại hết, chiếm 3 tiếng rưỡi trong 5 tiếng chuẩn bị một môn | Câu hỏi nhận được: phần "quan trọng" do ai quyết và sai sót đo thế nào (Minh Khánh hỏi) |
 | 9 | Quốc Khánh | Khi giữa tuần mà các thành viên trong nhóm project chưa báo tiến độ, tôi muốn biết phần của ai đã xong đến đâu, để không phải nhắn tin hỏi từng người nhiều lần | Trưởng nhóm project | Trong đợt project vừa rồi tuần nào mình cũng mất 30 đến 45 phút nhắn tin đuổi tiến độ, có tuần phải nhắc 2 lần | |
 | 10 | Giang | Khi phân tích các báo cáo tai nạn giao thông, tôi muốn trích xuất 11 trường thông tin quan trọng (về điều kiện môi trường, hạ tầng giao thông và các phương tiện liên quan), đồng thời gán cho mỗi trường một giá trị thuộc tập giá trị định trước để chuyển đổi nội dung báo cáo thành dữ liệu có cấu trúc và nhất quán. | Sinh viên nghiên cứu, nhà nghiên cứu xe tự hành | Mỗi báo cáo cần 12-15 phút để đọc và trích xuất. Quy mô nghiên cứu có thể cần tới 1000 báo cáo. | |
@@ -297,24 +297,20 @@ Vì sao: đầu ra có đúng sai rõ theo bộ tiêu chí cố định (đúng 
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Cao | Pain mới có bằng chứng từ một auditor duy nhất; giả định số 1 trong assumption map (các auditor khác cũng mất 10-30 phút một bài) mới ở mức bằng chứng 1/5, phỏng vấn chưa hoàn thành |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Trung bình | Bản nháp AI theo đúng mẫu feedback ba phần nên dễ đọc dễ sửa, nhưng giả định số 6 (auditor chịu dùng nháp và chỉnh) chưa được xác nhận |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Thấp | Dữ liệu đầu vào gồm đề, lời giải, code và testcase đã có sẵn trong hệ thống label; nhóm chỉ nối công cụ AI có sẵn, không phải huấn luyện mô hình |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | Cao | Chưa xác nhận quy định công ty có cho phép dùng công cụ AI trên dữ liệu label nội bộ hay không, giả định số 3 mới ở mức bằng chứng 1/5; nếu không được phép thì toàn bộ hướng AI phải bỏ |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Thấp | Auditor mất 8-12 phút/template cho công việc rà soát thủ công lặp đi lặp lại; nhu cầu tự động hóa tìm lỗi và soạn feedback là rất thực tế |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Trung bình | AI có thể phân tích sai logic toán phức tạp hoặc bỏ sót edge case của code; Auditor cần có kỹ năng đối chiếu, kiểm tra kỹ trước khi gửi feedback cho Expert |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Thấp | Template, lời giải toán học và code đều ở định dạng văn bản có sẵn, dễ dàng tích hợp script kiểm tra logic cơ bản và prompt AI chuyên biệt |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | Thấp | Không vi phạm quy định dữ liệu nội bộ; AI chỉ đóng vai trò trợ lý soạn nháp, Auditor trực tiếp chịu trách nhiệm vận hành và duyệt cuối cùng. |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Not Yet
+**Quyết định:** Go
 
-**Lý do:** hai rủi ro Cao là Value và Viability đều chưa được kiểm chứng, nhưng đều kiểm chứng được nhanh trong một đến hai ngày, nên bài chưa đủ tư cách Go theo nguyên tắc Go chỉ áp khi không còn rủi ro Cao. Đồng thời cũng không rơi xuống No-Go, vì pain thật đã có bằng chứng ban đầu từ người làm việc này và hướng Workflow khả thi về mặt kỹ thuật với dữ liệu có sẵn.
+**Lý do:** Giải quyết đúng điểm nghẽn ở khâu rà soát và viết feedback, giúp giảm 50-70% thời gian xử lý mà vẫn giữ quyền kiểm soát chất lượng hoàn toàn thuộc về con người.
 
-**Nếu Go — pilot nhỏ nhất:** chọn 10 template có lỗi đã xác định trước, cho AI soạn nháp feedback, auditor bấm giờ và chấm theo bốn tiêu chí eval ở mục 7; pilot được coi là đạt khi thời gian dưới 5 phút một template và AI bắt được từ 9 trên 10 lỗi có sẵn.
+**Nếu Go — pilot nhỏ nhất:** Chạy pilot trong 4 tuần với 1 Auditor, áp dụng cho việc kiểm duyệt template Toán có kèm code, tự ghi lại thời gian xử lý và tỷ lệ chính xác của feedback.
 
-**Nếu Not Yet — cần kiểm chứng gì trước:** một là phỏng vấn 2-3 auditor ngoài nhóm để xác nhận pain phổ biến, tức giả định số 1; hai là hỏi rõ bộ phận phụ trách về quy định dùng AI trên dữ liệu label nội bộ, tức giả định số 3. Hai việc này xong và đều qua thì chuyển Go và chạy pilot.
-
-**Nếu No-Go — nên làm gì thay AI:** chuẩn hóa checklist ba tiêu chí kèm mẫu feedback có sẵn ba phần (mức No AI), và thêm linter hoặc script chạy check cơ bản phần code (mức Rule). Đây là phương án giữ được phần nào thời gian mà không cần AI.
-
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …): nếu sau 2 tuần pilot mà auditor vẫn phải sửa lại quá 50% bản nháp AI, hoặc tỷ lệ báo nhầm vượt 20% số flag theo tiêu chí số 3 ở mục 7, thì quay về quy trình bảy bước thủ công ở mục 4.1 kèm checklist chuẩn hóa.
+**Ngưỡng dừng** (nếu sau … mà … thì quay về …): Nếu sau 4 tuần pilot mà tỷ lệ feedback sai sót do AI tăng lên hoặc thời gian review/sửa nháp không giảm so với thủ công, thì quay về quy trình thủ công hoàn toàn.
 
 ---
 

@@ -9,7 +9,7 @@
 - Họ tên: Vương Trường Giang 
 - MSSV: 2A202603834
 - Email trường (không bắt buộc, repo có thể để public): 26ai.giangvt@vinuni.edu.vn
-- Tên nhóm: 2010
+- Tên nhóm: Nhóm 2010
 - Link repo nhóm: https://github.com/iamdvmk/K5-L3B-DAY02-Nhom2010-DiscoveryProblemFraming
 
 ---

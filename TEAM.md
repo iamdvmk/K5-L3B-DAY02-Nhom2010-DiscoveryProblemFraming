@@ -90,3 +90,54 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - Phân biệt được opportunity và solution: tên cluster có chữ "tự động hóa" là tên giải pháp, phải đổi thành nỗi đau thật của người gặp việc đó.
 - Thấy được giá trị của phản biện: một chữ trong job story có thể đổi cả hướng kiểm chứng của nhóm.
+
+### VuongTruongGiang-2A202603834
+
+**Phần việc phụ trách:**
+
+- Phản biện các bài toán được đưa ra và hỗ trợ nhóm hội tụ ở CP3.
+- Phụ trách research giải pháp đã có ở CP4.
+- Hỗ trợ nhóm mô tả quy trình trước/sau và Problem Statement v0 ở CP5.
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Trình bày ba Problem Card về trích xuất dữ liệu tai nạn, audit label của Math Expert và điều chỉnh CV theo JD.
+- Đặt câu hỏi về tần suất chỉnh CV, cách nhận biết kiến thức chưa hiểu và hạn chế của công cụ tổng hợp tài liệu hiện có. Tham gia góp ý nhóm và chấm điểm bài toán.
+- Tìm hiểu STACK, Hypothesis và MathDebugger, lập bảng research có link và đối chiếu với quy trình kiểm duyệt label gồm đề bài, lời giải và code tạo bộ số liệu.
+- Rà soát quy trình và Problem Statement từ góc nhìn Auditor, chú ý việc kiểm tra logic lời giải, các trường hợp biên và feedback cho Expert.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- Mục 2.1–2.4 và 3.3 trong `report/team/group_report.md`.
+- Mục 2–3 trong `report/individual/2A202603834_VuongTruongGiang.md`.
+- Commit `8546c87` — `Giang add individual work & research`.
+
+**Điều mình học được từ phần nhóm:**
+
+- Cần cân nhắc quy mô nhu cầu, độ phức tạp, dữ liệu và khả năng triển khai trước khi chọn bài toán.
+- Khi kiểm duyệt label có biến được code, cần xét cả logic lời giải và những bộ số liệu có thể làm phát sinh lỗi.
+
+### NguyenLongVu-2A202603842
+
+**Phần việc phụ trách:**
+
+- Xây dựng Workflow trước/sau
+- Hỗ trợ CP3 (cùng gom cluster, cây OST, bảng chấm điểm), CP6 (hỗ trợ làm mức can thiệp và Problem Statement v1 với Quốc Khánh).
+- Đề xuất rủi ro và ra quyết định
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Pitch 3 ý tưởng liên quan đến tổng hợp, xử lý dữ liệu trong cơ quan khi thực hiện dự án
+- CP5: vẽ quy trình hiện tại (từng bước kèm số phút) và quy trình tương lai (đánh dấu Rule/AI/Người), lập bảng before/after.
+- CP6: chấm 4 rủi ro, kết luận Go/Not Yet/No-Go và đặt ngưỡng dừng.
+- Hỗ trợ CP3: Góp ý chấm điểm
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- Mục CP5. Workflow trc/sau, CP6. Quyết định trong `report/team/group_report.md`.
+- Mục 2-3 trong `report/individual/2A202603842_NguyenLongVu.md`.
+- Commit f1c1fde và 1577cf5
+
+**Điều mình học được từ phần nhóm:**
+
+- Tổng hợp và tiếp thận ý kiến của các thành viên để cùng đưa ra giải pháp, hướng giải quyết vấn đề. 
