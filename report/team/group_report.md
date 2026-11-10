@@ -129,36 +129,47 @@ Tổng hợp:
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
 ```text
-
+  [1 Nhận template từ Expert: 1'] 
+→ [2 Check đúng/sai Toán học: 2'] 
+→ [3 Check solution flow: 2'] 
+→ [4 Check grammar: 1'] 
+→ [5 Đọc và soi code, tìm edge cases: 2'] 
+→ [6 Xác định vị trí và đánh giá lỗi: 1'] 
+→ [7 Viết feedback cho Expert: 7'] ← BOTTLENECK
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Auditor | Bài tập và lời giải từ Expert | Bài tập được tiếp nhận trên hệ thống | 1 phút / template | Check công thức, tính toán, kết quả |
+| 2 | Auditor | Lời giải toán học | Xác định tính đúng/sai về mặt Toán học | 2 phút / template | Kiểm tra mạch lập luận, các bước suy luận |
+| 3 | Auditor | Lời giải và cấu trúc bài | Đánh giá solution flow và tính logic | 2 phút / template | Đảm bảo văn phong rõ ràng, chuẩn xác |
+| 4 | Auditor | Ngôn ngữ và văn bản lời giải | Phát hiện lỗi ngữ pháp, cách diễn đạt | 1 phút / template | Soi kỹ các nhánh điều kiện, input đặc biệt |
+| 5 | Auditor | Code và testcase đi kèm | Tìm lỗi logic và các trường hợp biên chưa xử lý | 2 phút / template | Tổng hợp các vấn đề cần feedback |
+| 6 | Auditor | Toàn bộ lỗi đã phát hiện từ các bước trên | Danh sách vị trí xuất hiện lỗi và hướng sửa sơ bộ | 1 phút / template | Tổng hợp các vấn đề cần feedback |
+| 7 | Auditor | Danh sách lỗi và đề xuất sửa | Feedback chi tiết gửi lại cho Expert | 7 phút / template | Viết nội dung giải thích và hướng dẫn sửa lỗi | 
 
-**Bottleneck chính:**
+**Bottleneck chính:** Viết feedback cho Expert
 
 ### 4.2. Quy trình tương lai
 
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
-
+[1 Hệ thống tự động gom template, chạy linter check code/edge cases cơ bản: 0.5'] ← RULE (script)
+→ [2 AI phân tích lời giải Toán học, kiểm tra logic flow, ngữ pháp và đối chiếu testcase code: 1.5'] ← AI
+→ [3 Auditor review bản nháp, đối chiếu code và tinh chỉnh feedback: 2'] ← CON NGƯỜI (Boundary: AI không được tự ý gửi feedback hay trực tiếp duyệt/sửa bài của Expert).
+→ [4 Auditor gửi feedback hoàn chỉnh: 0.5'] ← CON NGƯỜI
 ```
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 7 | 4 | Tinh gọn các thao tác kiểm tra lặp lại |
+| Tổng thời gian | 8-12 phút/template | 3-5 phút/template | Target: giảm thời gian tìm lỗi và viết feedback |
+| Số bước thủ công | 7/7 | 2/4 | Auditor giữ vai trò kiểm soát cuối cùng |
+| Bottleneck chính | Viết feedback (Bước 7) | Auditor review + tinh chỉnh | Tập trung vào việc đánh giá chất lượng thay vì gõ văn bản |
+| Rủi ro mới phát sinh | | AI bỏ sót edge case của code hoặc hiểu sai logic Toán | Xử lý bằng boundary + Auditor check kỹ phần code |
 
 ---
 
