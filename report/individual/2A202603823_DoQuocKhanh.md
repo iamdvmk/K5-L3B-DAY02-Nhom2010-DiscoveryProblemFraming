@@ -176,7 +176,7 @@ Trong chính bài của nhóm ở job story gốc của Giang chứa chữ tự 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 Tôi có lần đổi ý sau khi bị phản biện. Đó là khi bị hỏi "phần quan trọng do ai quyết" rồi hẹp actor và thêm cách đếm chương trong card ôn thi
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-
+Không làm tôi bất ngờ 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 Chỗ khó nhất là tách solution ra khỏi problem bỏ chữ "tự động" và ép metric có số baseline cụ thể thay vì chữ "nhanh hơn, tiện hơn"
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
