@@ -6,7 +6,7 @@
 
 - Tên nhóm: Nhóm 2010
 - Candidate problem nhóm chọn (1 câu): Kiểm tra chất lượng feedback cho các label của Math Expert, do auditor mất nhiều thời gian rà từng bài để tìm lỗi logic, ngữ pháp và các trường hợp biên
-- Quyết định cuối (Go / Not Yet / No-Go):
+- Quyết định cuối (Go / Not Yet / No-Go): Not Yet (kiểm chứng giả định số 1 và số 3 xong thì chuyển Go, xem mục 8 của group_report)
 
 ## Thành viên
 

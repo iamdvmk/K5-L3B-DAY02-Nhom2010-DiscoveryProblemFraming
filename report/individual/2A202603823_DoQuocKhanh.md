@@ -161,7 +161,7 @@ Mình đã đưa card 1 cho AI đóng vai product manager hoài nghi để phả
 | CP4 Research | Dùng AI mở và kiểm ba link trong bảng research của nhóm | Cả ba link STACK, Hypothesis, MathDebugger đều mở được và nội dung khớp với phần nhóm trích | AI chỉ kiểm được link còn sống, không tự đánh giá được nhận định của nhóm có sát hay không | Nhờ Giang xác nhận lại nội dung trích đúng với nguồn |
 | CP5 Quy trình | AI chỉ ra checklist CP8 yêu cầu quy trình tương lai phải có phương án quay về, thứ đang thiếu | Đúng là mục bắt buộc, thiếu là bị trừ 3 điểm | Không có gì sai, quy trình của Vũ giữ nguyên | Thêm một dòng phương án quay về viết theo quy trình bảy bước nhóm đã có |
 | CP5–6 Problem Statement | AI soạn nháp v1 từ v0 và bảng trước sau của nhóm đã viết | Ghép được các số liệu nhóm đã có thành metric có baseline và target cụ thể | AI viết trơn tru quá, dễ mất cách nói của nhóm | Kiểm lại từng trường, sửa lại câu chữ theo cách nhóm nói, nhóm tự chốt |
-| CP6 Mức can thiệp / quyết định | AI soạn nháp phần so sánh bốn mức, AI Canvas và PAIR dựa trên quy trình và PS v0 của nhóm | Trả lời rõ được vì sao Rule không đủ cho phần đọc lời giải tiếng tự nhiên | AI không tự chốt quyết định thay nhóm được, phần đó vẫn trống | Đọc lại nháp, giữ phần lập luận hợp lý, phần quyết định để nhóm chốt ở mục 8 |
+| CP6 Mức can thiệp / quyết định | AI soạn nháp phần so sánh bốn mức, AI Canvas, PAIR và mục 8 quyết định dựa trên assumption map và quy trình của nhóm | Trả lời rõ được vì sao Rule không đủ cho phần đọc lời giải tiếng tự nhiên | AI đặt quyết định Not Yet theo đúng rủi ro còn Cao của nhóm, nhưng điều kiện chuyển Go phải do nhóm tự xác nhận | Đọc lại nháp, giữ phần lập luận hợp lý, cả nhóm cùng chốt lại quyết định cuối |
 
 ---
 
@@ -170,19 +170,19 @@ Mình đã đưa card 1 cho AI đóng vai product manager hoài nghi để phả
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-
+Sau khi nghe được top 3 problems của các bạn khác tôi thấy vấn đề của mọi người khác hẳn với mình nhưng gom cluster vẫn quy về một pattern đọc-nhiều-nguồn; học được cách actor của bài người khác hẹp hơn của bạn ví dụ như actor "Auditor" của Giang không chung chung như của tôi
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
-
+Trong chính bài của nhóm ở job story gốc của Giang chứa chữ tự động kiểm tra", cluster lúc đầu tên "tự động hóa". Nhóm giải quyết bằng cách viết lại thành nỗi đau trước khi đưa vào  cây OST
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
-
+Tôi có lần đổi ý sau khi bị phản biện. Đó là khi bị hỏi "phần quan trọng do ai quyết" rồi hẹp actor và thêm cách đếm chương trong card ôn thi
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
-
+Chỗ khó nhất là tách solution ra khỏi problem bỏ chữ "tự động" và ép metric có số baseline cụ thể thay vì chữ "nhanh hơn, tiện hơn"
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
-
+Nếu làm lại sẽ scan thêm pain của người khác vì 3 card của mình đều là pain cá nhân nên không có người dùng thật để kiểm chứng; và sẽ phản biện mạnh hơn ở tiêu chí "pain có bằng chứng" ngay từ vòng pitch thay vì để đến lúc chấm điểm
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
+Problem: auditor mất 8-12 phút rà một bài feedback để tìm lỗi logic, ngữ pháp, biên → quy trình: 7 bước thủ công, nghẽn ở đọc và viết feedback → metric: baseline 8-12 phút, target dưới 5 phút và bắt từ 9/10 lỗi, đo bằng bấm giờ trên 10 template → boundary: AI không tự gửi, không tự chốt, auditor review trước khi gửi → mức can thiệp: Workflow, vì Rule không đọc được lời giải tiếng tự nhiên còn Agent là thừa → quyết định: Not Yet vì còn 2 rủi ro Cao chưa kiểm chứng, kèm ngưỡng dừng 50% phải sửa lại nháp hoặc 20% báo nhầm thì quay về thủ công
 ---
 
 ## 7. Tài liệu tham khảo

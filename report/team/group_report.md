@@ -8,7 +8,7 @@
 - Tên nhóm: Nhóm 2010
 - Thành viên: xem `TEAM.md`
 - Candidate problem được chọn (1 câu): Tự động kiểm tra chất lượng feedback cho các label của Math Expert
-- Quyết định cuối: Go
+- Quyết định cuối: Not Yet (chuyển Go sau khi kiểm chứng xong giả định số 1 và số 3 ở mục 3.1)
 
 ---
 
@@ -165,7 +165,7 @@ Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
-|---:|---|---|---|---|---|
+|---:|---|---|---|---:|---|
 | 1 | Auditor | Bài tập và lời giải từ Expert | Bài tập được tiếp nhận trên hệ thống | 1 phút / template | Check công thức, tính toán, kết quả |
 | 2 | Auditor | Lời giải toán học | Xác định tính đúng/sai về mặt Toán học | 2 phút / template | Kiểm tra mạch lập luận, các bước suy luận |
 | 3 | Auditor | Lời giải và cấu trúc bài | Đánh giá solution flow và tính logic | 2 phút / template | Đảm bảo văn phong rõ ràng, chuẩn xác |
@@ -297,31 +297,54 @@ Vì sao: đầu ra có đúng sai rõ theo bộ tiêu chí cố định (đúng 
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Cao | Pain mới có bằng chứng từ một auditor duy nhất; giả định số 1 trong assumption map (các auditor khác cũng mất 10-30 phút một bài) mới ở mức bằng chứng 1/5, phỏng vấn chưa hoàn thành |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Trung bình | Bản nháp AI theo đúng mẫu feedback ba phần nên dễ đọc dễ sửa, nhưng giả định số 6 (auditor chịu dùng nháp và chỉnh) chưa được xác nhận |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Thấp | Dữ liệu đầu vào gồm đề, lời giải, code và testcase đã có sẵn trong hệ thống label; nhóm chỉ nối công cụ AI có sẵn, không phải huấn luyện mô hình |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | Cao | Chưa xác nhận quy định công ty có cho phép dùng công cụ AI trên dữ liệu label nội bộ hay không, giả định số 3 mới ở mức bằng chứng 1/5; nếu không được phép thì toàn bộ hướng AI phải bỏ |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** Not Yet
 
-**Lý do:**
+**Lý do:** hai rủi ro Cao là Value và Viability đều chưa được kiểm chứng, nhưng đều kiểm chứng được nhanh trong một đến hai ngày, nên bài chưa đủ tư cách Go theo nguyên tắc Go chỉ áp khi không còn rủi ro Cao. Đồng thời cũng không rơi xuống No-Go, vì pain thật đã có bằng chứng ban đầu từ người làm việc này và hướng Workflow khả thi về mặt kỹ thuật với dữ liệu có sẵn.
 
-**Nếu Go — pilot nhỏ nhất:**
+**Nếu Go — pilot nhỏ nhất:** chọn 10 template có lỗi đã xác định trước, cho AI soạn nháp feedback, auditor bấm giờ và chấm theo bốn tiêu chí eval ở mục 7; pilot được coi là đạt khi thời gian dưới 5 phút một template và AI bắt được từ 9 trên 10 lỗi có sẵn.
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
+**Nếu Not Yet — cần kiểm chứng gì trước:** một là phỏng vấn 2-3 auditor ngoài nhóm để xác nhận pain phổ biến, tức giả định số 1; hai là hỏi rõ bộ phận phụ trách về quy định dùng AI trên dữ liệu label nội bộ, tức giả định số 3. Hai việc này xong và đều qua thì chuyển Go và chạy pilot.
 
-**Nếu No-Go — nên làm gì thay AI:**
+**Nếu No-Go — nên làm gì thay AI:** chuẩn hóa checklist ba tiêu chí kèm mẫu feedback có sẵn ba phần (mức No AI), và thêm linter hoặc script chạy check cơ bản phần code (mức Rule). Đây là phương án giữ được phần nào thời gian mà không cần AI.
 
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+**Ngưỡng dừng** (nếu sau … mà … thì quay về …): nếu sau 2 tuần pilot mà auditor vẫn phải sửa lại quá 50% bản nháp AI, hoặc tỷ lệ báo nhầm vượt 20% số flag theo tiêu chí số 3 ở mục 7, thì quay về quy trình bảy bước thủ công ở mục 4.1 kèm checklist chuẩn hóa.
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+- Kiểm chứng bằng phỏng vấn chưa chạy xong tại thời điểm chốt bài, còn hai giả định quan trọng chưa có bằng chứng, nên quyết định dừng ở Not Yet thay vì Go
+- Bộ eval mới có tiêu chí, chưa xây bộ 10 cặp input và đầu ra mẫu để chấm thử (thiếu phần này nên chưa đạt mức bonus B3)
+- Các con số thời gian 8-12 phút một template và 10-30 phút một bài phức tạp lấy từ quan sát của một auditor duy nhất, chưa đại diện cho nhiều người
+- Nhóm chưa kiểm tra được quy định pháp lý và bảo mật của công ty về việc dùng AI trên dữ liệu label, đây là điều kiện tiên quyết trước khi pilot
 
 ## 10. Tài liệu tham khảo
 
--
+Các framework trong bài lấy từ tài liệu nguồn của lab, xem bản tổng hợp kèm tóm tắt tại docs/03-international-frameworks.md:
+
+- Design Council, Double Diamond, Framework for Innovation: https://www.designcouncil.org.uk/resources/framework-for-innovation/
+- Intercom, How we accidentally invented Job Stories: https://www.intercom.com/blog/accidentally-invented-job-stories/
+- Teresa Torres, Opportunity Solution Trees: https://www.producttalk.org/opportunity-solution-trees/
+- David Bland, Assumptions Mapping (Strategyzer): https://www.strategyzer.com/library/how-assumptions-mapping-can-focus-your-teams-on-running-experiments-that-matter
+- Rob Fitzpatrick, The Mom Test: https://www.momtestbook.com/
+- Teresa Torres, The Interview Snapshot: https://www.producttalk.org/interview-snapshot/
+- Jeff Gothelf, Business Problem Statement vs Opportunity Statement: https://jeffgothelf.com/blog/business-problem-statement-opportunity-statement/
+- Google PAIR Guidebook, User Needs: https://pair.withgoogle.com/chapter/user-needs/
+- Anthropic, Building Effective Agents: https://www.anthropic.com/research/building-effective-agents
+- Harvard Business Review, A Simple Tool to Start Making Decisions with the Help of AI (AI Canvas): https://hbr.org/2018/04/a-simple-tool-to-start-making-decisions-with-the-help-of-ai
+- Marty Cagan, SVPG, The Four Big Risks: https://www.svpg.com/four-big-risks/
+- Microsoft Research, Guidelines for Human-AI Interaction: https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/
+- NIST AI RMF Playbook, MAP: https://airc.nist.gov/airmf-resources/playbook/map/
+
+Nguồn trong bảng research ở mục 3.3:
+
+- STACK Question authoring workflow và Deploying: https://docs.stack-assessment.org/en/STACK_question_admin/Authoring_workflow/ và https://docs.stack-assessment.org/en/STACK_question_admin/Deploying/
+- Hypothesis, Introduction to Hypothesis: https://hypothesis.readthedocs.io/en/latest/tutorial/introduction.html
+- MathDebugger, Type-Aware Error Detection for Synthetic Math Data: https://haolpku.github.io/MathDebugger/
