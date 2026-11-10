@@ -133,3 +133,63 @@ Mình đã đưa card 1 cho AI đóng vai product manager hoài nghi để phả
 | Actor "sinh viên ôn thi cuối kỳ" còn rộng, mỗi môn ôn mỗi kiểu | Đồng ý một phần | Hẹp lại thành sinh viên có môn nhiều chương lý thuyết, phần còn lại để sau khi kiểm chứng quyết |
 | Phương án chia nhau chọn lọc theo chương có khi đã giải được phần lớn, chưa rõ vì sao cần AI | Đồng ý | Giữ phương án này làm đối chiếu khi pitch: AI chỉ nhắm đúng vào bước đọc lại toàn bộ slide, nếu chia chương đã đủ thì kết luận là No AI |
 
+---
+
+## 4. Tôi đã tham gia phần nào (CP3 → CP7)
+
+| Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
+|---|---|---|
+| Pitch Problem Card | Pitch ba card của mình là gom tài liệu ôn thi, đuổi tiến độ nhóm project và đọc paper nghiên cứu. Nhóm không chọn bài nào của mình mà chốt bài kiểm tra feedback Math Expert | Ba bài của mình góp vào hai cluster đọc và tổng hợp, theo dõi trạng thái, giúp nhóm thấy pattern chung khi lập cây OST |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: chữ "tự động kiểm tra" trong job story của bài Math Expert là giải pháp đội lốt, phải mô tả lại bằng nỗi đau; actor auditor là ai và có người thật để phỏng vấn không | Nhóm viết lại problem dạng pain trước khi đưa vào cây OST, và xác định được người auditor thật để kiểm chứng ở CP4 |
+| Nhận phản biện | Câu hỏi tôi nhận được: trong bài ôn thi, phần "quan trọng" do ai quyết và sai sót đo thế nào. Tôi đã sửa gì: hẹp actor lại thành môn nhiều chương lý thuyết, thêm cách đếm số chương trong file ôn tập so với đề cương | Card ôn thi được sửa ngay trước khi pitch, không phải mang lỗi đo không được vào vòng nhóm |
+| Gom cluster / cây OST | Góp ý xếp lại cluster: chuyển bài số 5 và số 6 sang cụm đọc và tổng hợp, đổi tên cluster "tự động hóa" thành nỗi đau chỉnh CV theo từng JD | Cluster chặt hơn, tầng opportunity của cây OST không còn tên giải pháp |
+| Chọn candidate problem | Nhóm chốt bài Math Expert theo ý Giang. Tôi góp ý chốt kèm điều kiện là viết lại dạng pain, bỏ chữ "tự động" | Problem vào CP4 ở dạng pain đúng chuẩn |
+| Kiểm chứng / research | Đang phụ trách: soạn câu hỏi phỏng vấn theo ba luật Mom Test, lập assumption map và phỏng vấn auditor thật cho bài Math Expert | Kết quả ghi vào mục 3 của group_report sau khi xong buổi phỏng vấn |
+| Quy trình nhóm | Góp ý bước nào AI chen vào được và bước nào bắt buộc con người kiểm tra | Ghi vào mục 4 group_report |
+| Problem Statement | Góp ý success metric phải có baseline, target và cách đo, không nhận chữ "nhanh hơn" | Ghi vào mục 5 group_report |
+| Mức can thiệp AI | Làm ma trận độ mơ hồ nhân độ phức tạp, so sánh bốn mức và trả lời vì sao không chọn mức đơn giản hơn | Ghi vào mục 6 group_report |
+| Quyết định | Góp ý chấm bốn rủi ro và viết ngưỡng dừng đo được | Ghi vào mục 8 group_report |
+
+---
+
+## 5. Dùng AI
+
+| Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
+|---|---|---|---|---|
+| CP1 Scan | Nhờ AI gợi ý thêm ý sau khi đã tự scan trước | Gợi ý thêm được vài góc như mua hàng online, chỉnh CV theo JD | Vài ý không phải trải nghiệm của mình như việc CLB, chọn elective | Bỏ hết ý lạ, giữ lại ý mình thật sự gặp và tự điền lại số liệu theo tuần của mình |
+| CP2 Problem Card | Đưa card ôn thi cho AI đóng vai product manager hoài nghi | Chỉ ra được metric chưa đo được việc bỏ sót và actor còn rộng | AI sẵn sàng viết lại cả card thay mình | Chỉ nhận lấy điểm yếu, cách sửa do mình quyết |
+| CP4 Research | đang cập nhật sau khi nhóm làm xong phần research | | | |
+| CP5 Quy trình | đang cập nhật sau buổi nhóm | | | |
+| CP5–6 Problem Statement | đang cập nhật sau buổi nhóm | | | |
+| CP6 Mức can thiệp / quyết định | đang cập nhật sau buổi nhóm | | | |
+
+---
+
+## 6. Reflection (CP7)
+
+Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
+
+**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+
+**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+
+**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+**6.5. Điều khó nhất khi viết Problem Statement là gì?**
+
+**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+
+**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+---
+
+## 7. Tài liệu tham khảo
+
+- Rob Fitzpatrick, The Mom Test, nguyên tắc phỏng vấn dùng ở CP4
+- Teresa Torres, Continuous Discovery Habits, Opportunity Solution Tree và Interview Snapshot
+- Intercom, Jobs-to-be-Done, cách viết Job Story
+- Jeff Gothelf, Lean UX, cách viết Problem Statement
+- Tài liệu lab: docs/01-worksheet.md, docs/02-deliverable-example.md, docs/03-international-frameworks.md
+
