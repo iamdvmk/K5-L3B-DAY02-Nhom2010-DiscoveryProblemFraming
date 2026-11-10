@@ -1,6 +1,5 @@
-# Báo cáo cá nhân — MSSV_HoTen
+# Báo cáo cá nhân — 2A202603834_VuongTruongGiang
 
-> Đổi tên file theo quy tắc `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md` (MSSV trước, dấu `_`, họ tên viết liền không dấu). Sửa cả dòng tiêu đề phía trên cho khớp.
 > Template chi tiết và prompt mẫu cho từng mục: [docs/01-worksheet.md](../../docs/01-worksheet.md).
 > Mỗi thành viên một file trong `report/individual/` trên repo nhóm: copy template này thành file mới, điền, rồi commit bằng tài khoản GitHub của bạn. Không viết hộ người khác.
 
@@ -157,16 +156,16 @@ Quy trình nháp hiện tại:
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | Tôi trình bày ba Problem Card cá nhân và giải thích lý do chọn từng vấn đề. | Sau khi thảo luận, nhóm đánh giá việc kiểm duyệt label của Math Expert là một vấn đề tiềm năng. |
-| Phản biện bài của bạn khác | Tôi hỏi về tần suất ứng viên phải chỉnh CV theo từng JD, cách người học nhận ra phần kiến thức chưa hiểu và hạn chế của các công cụ tổng hợp tài liệu hiện có. | Các câu hỏi làm rõ điều cần kiểm chứng ở từng bài toán, gồm tần suất gặp vấn đề, dấu hiệu nhận biết và hạn chế của cách làm hiện tại. |
-| Nhận phản biện | Bước nào tốn nhiều thời gian hơn, tìm lỗi hay viết feedback? | Tôi trình bày thời gian trung bình của từng bước, đồng thời làm rõ khi viết feedback cần gợi ý Expert cách sửa lỗi. |
-| Gom cluster / cây OST | Tôi góp ý cách gom các vấn đề có nhu cầu tương đồng vào cùng một cụm. | Ý kiến của tôi giúp nhóm làm rõ căn cứ gom các vấn đề vào cùng một nhánh của cây OST. |
-| Chọn candidate problem | Tôi tham gia chấm điểm từng bài toán trong danh sách của nhóm. | Điểm đánh giá của tôi được dùng cùng đánh giá của các thành viên khác để so sánh các bài toán ứng viên. |
-| Kiểm chứng / research | Tôi tìm các giải pháp liên quan đến label gồm đề bài và lời giải có biến do code sinh ra, rồi đối chiếu từng giải pháp với các bước audit. | Bảng research có link đến STACK, Hypothesis và MathDebugger, giúp nhóm định hình các giải pháp hiện có |
-| Quy trình nhóm | Tôi được phân công hỗ trợ Vũ mô tả quy trình kiểm duyệt trước và sau khi có công cụ hỗ trợ. | Phần tôi phụ trách hỗ trợ là đối chiếu các bước Auditor kiểm tra đề, lời giải và bộ số liệu do code sinh ra trong bảng before/after. |
-| Problem Statement | Tôi được phân công hỗ trợ Minh Khánh viết Problem Statement v0 từ góc nhìn của Auditor. | Nội dung cần làm rõ trong v0 là khó khăn của Auditor khi xác minh cùng một mẫu lời giải trên nhiều bộ số liệu và chỉ ra trường hợp sai để Expert sửa. |
-| Mức can thiệp AI | Tôi cung cấp bảng research từ CP4. Quốc Khánh và Vũ phụ trách đánh giá mức can thiệp AI ở CP6. | Bảng research là đầu vào để đối chiếu bước có thể kiểm tra bằng code với bước cần Auditor đánh giá lập luận. |
-| Quyết định | Thảo luận về quyết định của nhóm. | Đảm bảo cả nhóm thống nhất ý kiến. |
+| Pitch Problem Card | Tôi trình bày ba Problem Card: trích xuất thông tin tai nạn, kiểm duyệt label Math Expert và chỉnh CV theo JD. | Nhóm đưa bài toán kiểm duyệt label vào shortlist rồi chọn để kiểm chứng. |
+| Phản biện bài của bạn khác | Tôi hỏi về tần suất chỉnh CV theo JD, cách người học nhận ra phần chưa hiểu và hạn chế của công cụ tổng hợp tài liệu hiện có. | Các câu hỏi làm rõ tần suất gặp vấn đề, cách nhận biết pain và khoảng trống của giải pháp sẵn có. |
+| Nhận phản biện | Tôi nhận câu hỏi: Auditor tốn thời gian nhất ở bước tìm lỗi hay viết feedback, đã đo trên bao nhiêu label và bài có code khác bài thường thế nào? | Tôi bỏ kết luận một bước luôn là bottleneck; ba tình huống Auditor cho thấy thời gian tập trung ở rà code, rà ngữ pháp hoặc viết feedback tùy loại label. Cần bấm giờ từng bước trên label thực tế. |
+| Gom cluster / cây OST | Tôi góp ý gom các bài toán có nhu cầu tương đồng và đối chiếu nhánh OST với công việc kiểm duyệt label. | Cây OST của nhóm nêu ba pain cụ thể: feedback cho label nhiều lỗi, rà code sinh biến và rà ngữ pháp lặp lại. |
+| Chọn candidate problem | Tôi tham gia chấm điểm và so sánh các candidate trong shortlist. | Nhóm chọn bài toán Math Expert vì có Auditor thật để hỏi và quy trình đủ rõ để kiểm chứng; đây là quyết định của cả nhóm. |
+| Kiểm chứng / research | Tôi cung cấp các tình huống Auditor cho ba snapshot, đồng thời phụ trách tìm và đối chiếu STACK, Hypothesis, MathDebugger với label gồm đề, lời giải và code sinh biến. | Mục 3.2 ghi các tín hiệu xác nhận và phản bác; mục 3.3 có bảng research kèm link, nêu rõ phạm vi áp dụng và điều chưa kiểm chứng trên dữ liệu công ty. |
+| Quy trình nhóm | Tôi góp ý các bước Auditor đọc đề, rà lời giải, kiểm tra code sinh biến, tìm trường hợp biên và viết feedback; đối chiếu thời gian trong bảng trước/sau với lời kể phỏng vấn. | Quy trình ở mục 4 không cộng các mốc từ ba tình huống khác nhau thành một thời gian trung bình cho mỗi label. |
+| Problem Statement | Tôi hỗ trợ Minh Khánh làm rõ v0 từ góc nhìn Auditor: đối tượng được kiểm là label, gồm đề và lời giải có biến do code sinh ra. | Problem Statement mô tả đúng công việc rà lỗi và viết feedback, đồng thời ghi baseline tổng thời gian là phần cần đo. |
+| Mức can thiệp AI | Tôi dùng kết quả research để phản biện phạm vi của Rule và Workflow; phần ma trận, AI Canvas và v1 do Quốc Khánh và Vũ phụ trách. | Nhóm giữ Auditor là người kiểm và gửi feedback; mức Workflow được đưa ra để thử, chưa coi là hiệu quả đã chứng minh. |
+| Quyết định | Tôi rà lại căn cứ cho kết luận, nhất là số phút tiết kiệm và quyền dùng dữ liệu label nội bộ. | Mục 8 ghi Go cho pilot có điều kiện và ngưỡng dừng; các ngưỡng giảm thời gian, phát hiện lỗi và báo nhầm là mục tiêu thử nghiệm. |
 
 ---
 
@@ -187,22 +186,22 @@ Quy trình nháp hiện tại:
 
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
-**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác? Khi chọn vấn đề cần cân nhắc cả mức độ phức tạp và khả năng triển khai. Ví dụ, bài toán phát hiện trộm xe nghe rất thiết thực nhưng cần mô hình có độ chính xác cao. Ngoài ra, dữ liệu để xây dựng và kiểm thử cũng khó tìm, còn chi phí triển khai có thể lớn.**
+**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?** Khi chọn vấn đề cần cân nhắc cả mức độ phức tạp và khả năng triển khai. Ví dụ, bài toán phát hiện trộm xe nghe rất thiết thực nhưng cần mô hình có độ chính xác cao. Ngoài ra, dữ liệu để xây dựng và kiểm thử cũng khó tìm, còn chi phí triển khai có thể lớn.
 
-**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào? Có. Với bài toán ôn tập, ban đầu nhóm nghĩ ngay đến việc dùng AI hỗ trợ người học ôn các phần trọng tâm. Sau đó, nhóm nhận ra chưa làm rõ cách xác định người học đã hiểu phần nào và còn yếu phần nào. Nếu chỉ dựa vào nội dung đã học thì AI khó biết người học thực sự nắm được kiến thức đến đâu. Nhóm cần tìm hiểu thêm cách người học tự đánh giá và theo dõi việc học trước khi chọn giải pháp.**
+**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?** Có. Với bài toán ôn tập, ban đầu nhóm nghĩ ngay đến việc dùng AI hỗ trợ người học ôn các phần trọng tâm. Sau đó, nhóm nhận ra chưa làm rõ cách xác định người học đã hiểu phần nào và còn yếu phần nào. Nếu chỉ dựa vào nội dung đã học thì AI khó biết người học thực sự nắm được kiến thức đến đâu. Nhóm cần tìm hiểu thêm cách người học tự đánh giá và theo dõi việc học trước khi chọn giải pháp.
 
-**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể. Có. Ban đầu tôi đánh giá cao bài toán trích xuất dữ liệu từ báo cáo thực tế vì nghĩ đây là công việc tốn nhiều thời gian và có thể lặp lại với số lượng lớn. Sau khi xem xét lại, tôi nhận ra không có nhiều người phải thực hiện công việc này theo cách thủ công. Điều đó khiến tôi cân nhắc lại quy mô nhu cầu, thay vì chỉ dựa vào việc mỗi báo cáo mất bao lâu để xử lý**
+**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.** Có. Ban đầu tôi đánh giá cao bài toán trích xuất dữ liệu từ báo cáo thực tế vì nghĩ đây là công việc tốn nhiều thời gian và có thể lặp lại với số lượng lớn. Sau khi xem xét lại, tôi nhận ra không có nhiều người phải thực hiện công việc này theo cách thủ công. Điều đó khiến tôi cân nhắc lại quy mô nhu cầu, thay vì chỉ dựa vào việc mỗi báo cáo mất bao lâu để xử lý
 
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì? Khi tìm hiểu bài toán audit label, tôi thấy dạng dữ liệu mà công ty tôi sử dụng khá đặc thù. Mỗi label gồm đề bài và lời giải, trong đó có code tạo ra nhiều bộ số liệu. Tôi tìm được một số công cụ giải quyết từng phần tương tự, nhưng chưa thấy giải pháp nào phù hợp trực tiếp với toàn bộ quy trình của công ty. Điều này khiến tôi nhận ra giải pháp có thể chỉ phù hợp trong phạm vi nội bộ.**
+**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?** Khi tìm hiểu bài toán audit label, tôi thấy dạng dữ liệu mà công ty tôi sử dụng khá đặc thù. Mỗi label gồm đề bài và lời giải, trong đó có code tạo ra nhiều bộ số liệu. Tôi tìm được một số công cụ giải quyết từng phần tương tự, nhưng chưa thấy giải pháp nào phù hợp trực tiếp với toàn bộ quy trình của công ty. Điều này khiến tôi nhận ra giải pháp có thể chỉ phù hợp trong phạm vi nội bộ.
 
-**6.5. Điều khó nhất khi viết Problem Statement là gì? Khó nhất là mô tả đủ rõ công việc audit label mà người chưa từng làm vẫn hiểu được. Nếu chỉ nói Auditor cần kiểm tra bài Toán thì sẽ thiếu phần code tạo biến và các trường hợp phát sinh khi thay số. Nhưng nếu giải thích quá sâu về kỹ thuật thì câu mô tả vấn đề lại dài và khó theo dõi.**
+**6.5. Điều khó nhất khi viết Problem Statement là gì?** Khó nhất là mô tả đủ rõ công việc audit label mà người chưa từng làm vẫn hiểu được. Nếu chỉ nói Auditor cần kiểm tra bài Toán thì sẽ thiếu phần code tạo biến và các trường hợp phát sinh khi thay số. Nhưng nếu giải thích quá sâu về kỹ thuật thì câu mô tả vấn đề lại dài và khó theo dõi.
 
-**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào? Nếu làm lại, tôi sẽ ghi nhận thời gian kiểm tra trên một số label thực tế ngay từ đầu và tách thời gian tìm lỗi với thời gian viết feedback. Khi đó, nhóm có cơ sở rõ hơn để xác định bước nào cần cải thiện.**
+**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?** Nếu làm lại, tôi sẽ ghi nhận thời gian kiểm tra trên một số label thực tế ngay từ đầu và tách thời gian tìm lỗi với thời gian viết feedback. Khi đó, nhóm có cơ sở rõ hơn để xác định bước nào cần cải thiện.
 
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+**6.7. Hiểu bài:** Bài nhóm tôi chọn là việc Auditor mất thời gian kiểm duyệt label Toán của Expert, nhất là khi label có cả đề, lời giải và code sinh ra nhiều bộ số liệu. Hiện Auditor phải đọc đề và lời giải, rà ngữ pháp, kiểm tra code để tìm trường hợp biên rồi viết feedback; qua ba cuộc phỏng vấn, tôi thấy mỗi loại label lại tốn thời gian ở một bước khác nhau. Vì vậy nhóm chưa thể lấy một con số chung làm baseline, mà cần bấm giờ từng bước trên các label thực tế. Khi thử, nhóm sẽ so sánh tổng thời gian với cách làm thủ công, đặt mục tiêu giảm ít nhất 30%, phát hiện từ 90% lỗi đã biết và giữ báo nhầm dưới 20%. Quy trình đề xuất cho script chạy các kiểm tra định sẵn, AI nêu chỗ nghi lỗi và soạn nháp feedback, sau đó Auditor kiểm lại toàn bộ. AI không được tự sửa label, duyệt bài hay gửi feedback cho Expert; quyết định cuối vẫn thuộc về Auditor. Nhóm chọn Go cho một pilot nhỏ, với điều kiện công ty cho phép dùng dữ liệu label nội bộ và có bộ bài tham chiếu để đo kết quả.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+- Slide bài giảng *Day02-Xác định bài toán cho AI*.

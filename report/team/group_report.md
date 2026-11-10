@@ -7,8 +7,8 @@
 
 - Tên nhóm: Nhóm 2010
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu): Tự động kiểm tra chất lượng feedback cho các label của Math Expert
-- Quyết định cuối: Go
+- Candidate problem được chọn (1 câu): Auditor mất thời gian kiểm tra đề bài, lời giải và code sinh biến trong label của Math Expert, rồi viết feedback chỉ rõ lỗi cho Expert.
+- Quyết định cuối: Go cho pilot có điều kiện (sau khi xác nhận quyền dùng dữ liệu nội bộ)
 
 ---
 
@@ -44,37 +44,30 @@
 Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
 
 ```text
-OUTCOME: Giảm thời gian kiểm tra chất lượng feedback cho
-các label của Math Expert, đồng thời đảm bảo
-feedback chính xác, logic và nhất quán.
+OUTCOME: Giảm thời gian kiểm duyệt label của Math Expert,
+đồng thời giữ chất lượng phát hiện lỗi và feedback.
 ├── Opportunity A:
-│   Feedback cần được kiểm tra trên nhiều khía cạnh
-│   như tính đúng sai, logic lời giải, ngữ pháp và
-│   các trường hợp biên trong code, khiến Auditor
-│   phải dành nhiều thời gian rà soát thủ công.
+│   Label có nhiều lỗi khiến Auditor phải mô tả
+│   từng lỗi và trao đổi thêm với Expert.
 │
 ├── Opportunity B:
-│   Một số lỗi trong lời giải hoặc code khó phát hiện
-│   khi chỉ đọc feedback thông thường, đặc biệt là
-│   lỗi logic, trường hợp biên và các bước suy luận
-│   chưa đầy đủ.
+│   Lời giải có vẻ đúng vẫn cần kiểm tra code sinh biến
+│   để phát hiện trường hợp biên.
 │
 └── Opportunity C:
-    Việc đánh giá feedback có thể phụ thuộc vào
-    kinh nghiệm và cách nhìn nhận của từng Auditor,
-    dẫn đến kết quả kiểm tra thiếu nhất quán
-    giữa những người đánh giá khác nhau.
+    Việc rà ngữ pháp lặp lại nhiều lần, Auditor vẫn
+    có thể bỏ sót lỗi nhỏ dù đã dùng công cụ hỗ trợ.
 ```
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Kiểm tra feedback Math Expert | 5 | 5 | 5 | 4 | 5 | 5 | 5 | 34 |
+| Kiểm duyệt label Math Expert | 5 | 5 | 5 | 4 | 5 | 5 | 5 | 34 |
 | Trích xuất thông tin tai nạn | 5 | 5 | 4 | 5 | 4 | 5 | 4 | 32 |
 | Đọc hiểu paper nghiên cứu | 5 | 5 | 5 | 4 | 5 | 5 | 5 | 34 |
 
-**Candidate được chọn:**Tự động kiểm tra chất lượng feedback cho các label của Math Expert.
+**Candidate được chọn:** Auditor kiểm duyệt label của Math Expert và viết feedback cho Expert.
 
 **Vì sao chọn:** Actor cụ thể, quy trình rõ ràng, pain có ý nghĩa, impact có thể đo lường
 
@@ -91,20 +84,18 @@ feedback chính xác, logic và nhất quán.
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | Nhiều auditor ngoài người kể ban đầu cũng mất khoảng 10-30 phút cho một bài, pain không phải của riêng một người | Value | 5 | 1 | Kiểm chứng trước |
+| 1 | Nhiều Auditor gặp khó khăn khi kiểm duyệt label, nhưng bước tốn thời gian có thể khác nhau theo loại label | Value | 5 | 1 | Kiểm chứng trước |
 | 2 | Có bộ feedback mẫu kèm lỗi đã xác định trước, đủ để làm bộ bài test đánh giá AI | Feasibility | 4 | 2 | |
 | 3 | Công ty cho phép dùng công cụ AI trên dữ liệu label nội bộ | Viability | 4 | 1 | Kiểm chứng trước |
 | 4 | Auditor muốn AI hỗ trợ soạn nháp chứ không muốn mất quyền chốt cuối | Value | 4 | 2 | |
 | 5 | AI đọc được cấu trúc label gồm đề, lời giải, code và testcase một cách nhất quán | Feasibility | 4 | 2 | |
 | 6 | Auditor hiểu và sửa được bản nháp feedback do AI soạn | Usability | 3 | 2 | |
 
-*Điền 4–6 giả định; xóa dòng thừa.*
-
-Giả định nhóm kiểm chứng trong buổi này: giả định số 1 (pain thật và phổ biến giữa các auditor) và giả định số 3 (được phép dùng AI trên dữ liệu nội bộ), vì đây là hai giả định quan trọng nhất mà bằng chứng hiện có mỏng nhất. Nếu giả định số 3 sai thì cả bài quay về hướng No AI hoặc Rule chạy nội bộ, không dùng AI.
+Nhóm đã phỏng vấn ba Auditor để kiểm tra giả định số 1; kết quả cho thấy các điểm tốn thời gian khác nhau, chưa đủ để suy ra một mức thời gian chung. Giả định số 3 về quyền dùng dữ liệu nội bộ chưa được xác nhận và phải kiểm tra trước pilot. Nếu không được phép dùng AI với dữ liệu label, nhóm quay về hướng No AI hoặc Rule phù hợp quy định nội bộ.
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: **Phỏng vấn** (dự kiến 2-3 auditor thật, không phỏng vấn thành viên nhóm mình theo quy định của lab)
+Cách đã dùng: **Phỏng vấn 3 Auditor** (theo ba snapshot bên dưới).
 
 Bộ câu hỏi phỏng vấn đã soạn theo ba luật Mom Test (hỏi chuyện đã xảy ra, không hỏi giả định; hỏi cuộc sống của họ, không hỏi ý tưởng của mình; nói ít nghe nhiều):
 
@@ -117,26 +108,51 @@ Lưu ý ghi nhận: nếu auditor trả lời bài thường chỉ mất vài ph
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
 
+**Auditor #1:**
+
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Người được hỏi (vai trò, không ghi tên thật) | Auditor |
+| Câu nói đáng nhớ nhất (nguyên văn) | Có rất nhiều Label có chất lượng quá tệ, việc tôi phải đưu feedback chi tiết cho từng lỗi còn tốn thời gian hơn việc tôi làm lại label đó từ đầu |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Auditor tốn thêm thời gian trao đổi với Expert qua slack để giải thích thêm về lỗi (10-15 phút)  |
+| Hiện đang xử lý bằng cách nào (workaround)? | Auditor vẫn phải đưa feedback chi tiết dựa trên quy trình của công ty |
+| Mất bao lâu, bao lần? | 15 phút/lần, 1-2 lần 1 ngày |
+| Insight / opportunity rút ra | Với label có nhiều lỗi, việc mô tả lỗi và trao đổi thêm với Expert tốn thời gian. Mức tiết kiệm nhờ công cụ hỗ trợ chưa được đo. |
 
-Tổng hợp:
+**Auditor #2:**
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | Auditor |
+| Câu nói đáng nhớ nhất (nguyên văn) | “Việc audit cần độ chính xác rất cao, nhiều lúc tôi bỏ sót lỗi nhỏ nhữ ngữ pháp.” |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Label không được duyệt do còn lỗi, sau đó Auditor phải kiểm tra và tự mình sửa lại label đã audit. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Auditor sử dụng công cụ kiểm tra ngữ pháp bên ngoài để hỗ trợ rà soát. |
+| Mất bao lâu, bao lần? | Khoảng 1–2 phút/lần, thực hiện 20–30 lần/ngày. |
+| Insight / opportunity rút ra | Kiểm tra ngữ pháp là công việc lặp lại nhiều lần trong ngày và Auditor vẫn có thể bỏ sót lỗi. |
+
+**Auditor #3**
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | Auditor |
+| Câu nói đáng nhớ nhất (nguyên văn) | "Với nhiều label của Expert kỳ cựu, lời giải của họ có flow rất logic, có tính đúng đắn về mặt toán học cao. Các phần này viết bằng ngôn ngữ tự nhiên và chỉ mất khoảng 2 phút để tôi đưa ra nhận định này. Tuy nhiên tôi vẫn cần kiểm tra code của họ rất chi tiết và thời gian này phần lớn không tìm ra lỗi (mất khoảng 5 phút mỗi label)" |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Auditor kiểm tra một bài toán có đáp án đúng và lời giải mượt, dễ hiểu. Sau đó, Auditor đã tìm ra edge case trong khoảng 6 phút kiểm tra. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Auditor đọc và rà soát code để tìm các trường hợp biên. |
+| Mất bao lâu, bao lần? | Khoảng 5-7 phút cho bước đọc code của bài được kể. |
+| Insight / opportunity rút ra | Nhóm có thể tìm cách hỗ trợ Auditor xác định và kiểm thử các trường hợp biên, rồi đo xem cách đó có giảm thời gian rà soát mà vẫn phát hiện được lỗi hay không. |
+
+
+**Tổng hợp:**
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| Phỏng vấn auditor | | | |
-| Phỏng vấn auditor | | | |
-| Phỏng vấn auditor | | | |
+| Phỏng vấn Auditor 1 | 1 | Label nhiều lỗi khiến Auditor phải viết feedback chi tiết và có lúc trao đổi thêm với Expert; người được hỏi ước tính khoảng 15 phút/lần, gặp 1–2 lần/ngày. | Chưa tách riêng thời gian viết feedback và trao đổi. |
+| Phỏng vấn auditor 2 | 1 | Auditor có thể bỏ sót lỗi ngữ pháp và hiện dùng công cụ bên ngoài để hỗ trợ kiểm tra, khoảng 1–2 phút/lần, 20–30 lần/ngày. | Đã có công cụ kiểm tra ngữ pháp. |
+| Phỏng vấn auditor 3 |1 | Auditor vẫn dành khoảng 5-7 phút/label để kiểm tra code của Expert kỳ cựu, dù lời giải có vẻ đúng và logic.| Auditor cho biết phần lớn lần kiểm tra code này không phát hiện lỗi|
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
 
-Trước khi kiểm chứng, problem đã được viết lại từ cụm "tự động kiểm tra" (solution đội lốt) thành nỗi đau thật là auditor mất nhiều thời gian rà từng bài để tìm lỗi logic, ngữ pháp và trường hợp biên, theo phản biện ở CP3. Phần thay đổi sau khi phỏng vấn xong sẽ cập nhật tại đây.
+Trước khi kiểm chứng, nhóm bỏ cụm "tự động kiểm tra" khỏi mô tả problem. Ba cuộc phỏng vấn cho thấy thời gian tập trung ở các bước khác nhau tùy loại label: viết feedback khi có nhiều lỗi, rà ngữ pháp lặp lại, hoặc kiểm tra code dù lời giải nhìn qua có vẻ đúng. Nhóm sửa problem thành khó khăn của Auditor khi kiểm duyệt đề, lời giải và code sinh biến rồi viết feedback; bottleneck cần được đo theo loại label, chưa thể gán chung cho một bước.
 
 ### 3.3. Research giải pháp đã có
 
@@ -152,52 +168,48 @@ Trước khi kiểm chứng, problem đã được viết lại từ cụm "tự
 
 ### 4.1. Quy trình hiện tại
 
-Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
-
 ```text
-  [1 Nhận template từ Expert: 1'] 
-→ [2 Check đúng/sai Toán học: 2'] 
-→ [3 Check solution flow: 2'] 
-→ [4 Check grammar: 1'] 
-→ [5 Đọc và soi code, tìm edge cases: 2'] 
-→ [6 Xác định vị trí và đánh giá lỗi: 1'] 
-→ [7 Viết feedback cho Expert: 7'] ← BOTTLENECK
+[1 Nhận label từ Expert]
+→ [2 Kiểm tra tính đúng/sai Toán học]
+→ [3 Đọc mạch lập luận của lời giải]
+→ [4 Rà ngữ pháp và cách diễn đạt]
+→ [5 Kiểm tra code sinh biến và trường hợp biên]
+→ [6 Ghi nhận vị trí, mức độ lỗi]
+→ [7 Viết feedback cho Expert; trao đổi thêm nếu cần]
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | Auditor | Bài tập và lời giải từ Expert | Bài tập được tiếp nhận trên hệ thống | 1 phút / template | Check công thức, tính toán, kết quả |
-| 2 | Auditor | Lời giải toán học | Xác định tính đúng/sai về mặt Toán học | 2 phút / template | Kiểm tra mạch lập luận, các bước suy luận |
-| 3 | Auditor | Lời giải và cấu trúc bài | Đánh giá solution flow và tính logic | 2 phút / template | Đảm bảo văn phong rõ ràng, chuẩn xác |
-| 4 | Auditor | Ngôn ngữ và văn bản lời giải | Phát hiện lỗi ngữ pháp, cách diễn đạt | 1 phút / template | Soi kỹ các nhánh điều kiện, input đặc biệt |
-| 5 | Auditor | Code và testcase đi kèm | Tìm lỗi logic và các trường hợp biên chưa xử lý | 2 phút / template | Tổng hợp các vấn đề cần feedback |
-| 6 | Auditor | Toàn bộ lỗi đã phát hiện từ các bước trên | Danh sách vị trí xuất hiện lỗi và hướng sửa sơ bộ | 1 phút / template | Tổng hợp các vấn đề cần feedback |
-| 7 | Auditor | Danh sách lỗi và đề xuất sửa | Feedback chi tiết gửi lại cho Expert | 7 phút / template | Viết nội dung giải thích và hướng dẫn sửa lỗi | 
+| 1 | Auditor | Label gồm đề, lời giải và code sinh biến từ Expert | Label được tiếp nhận để kiểm duyệt | Chưa đo riêng | Xác định thành phần cần kiểm tra. |
+| 2 | Auditor | Đề và lời giải | Nhận định về tính đúng/sai Toán học | Chưa đo riêng; bước 2–3 khoảng 2 phút trong tình huống Auditor #3 kể | Đối chiếu giả thiết, phép tính và đáp án. |
+| 3 | Auditor | Các bước trong lời giải | Nhận định về mạch lập luận và độ rõ ràng | Gộp với bước 2 trong lời kể trên | Đọc cả lời giải, kể cả khi đáp án có vẻ đúng. |
+| 4 | Auditor | Câu chữ trong đề và lời giải | Lỗi ngữ pháp, cách diễn đạt cần sửa | Khoảng 1–2 phút/lần, 20–30 lần/ngày theo Auditor #2 | Có dùng công cụ kiểm tra ngữ pháp bên ngoài. |
+| 5 | Auditor | Code sinh biến và các điều kiện của bài | Trường hợp biên hoặc bộ số liệu gây lỗi | Khoảng 5–7 phút trong tình huống Auditor #3 kể | Cần đối chiếu code với đề và lời giải. |
+| 6 | Auditor | Các lỗi đã phát hiện | Danh sách vị trí lỗi và hướng sửa sơ bộ | Chưa đo riêng | Tổng hợp bằng chứng để viết feedback. |
+| 7 | Auditor | Danh sách lỗi | Feedback gửi Expert; có thể trao đổi thêm | Khoảng 15 phút/lần xử lý label nhiều lỗi theo Auditor #1; chưa tách thời gian viết và trao đổi | Giải thích từng lỗi và hướng sửa. |
 
-**Bottleneck chính:** Viết feedback cho Expert
+**Bottleneck theo loại label:** Label nhiều lỗi tốn thời gian viết feedback; label có lời giải tốt vẫn tốn thời gian rà code; rà ngữ pháp lặp lại nhiều lần. Chưa đo tổng thời gian trung bình cho một label.
 
 ### 4.2. Quy trình tương lai
 
-Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
-
 ```text
-[1 Hệ thống tự động gom template, chạy linter check code/edge cases cơ bản: 0.5'] ← RULE (script)
-→ [2 AI phân tích lời giải Toán học, kiểm tra logic flow, ngữ pháp và đối chiếu testcase code: 1.5'] ← AI
-→ [3 Auditor review bản nháp, đối chiếu code và tinh chỉnh feedback: 2'] ← CON NGƯỜI (Boundary: AI không được tự ý gửi feedback hay trực tiếp duyệt/sửa bài của Expert).
-→ [4 Auditor gửi feedback hoàn chỉnh: 0.5'] ← CON NGƯỜI
+[1 Script gom label và chạy các kiểm tra đã định nghĩa] ← RULE
+→ [2 AI nêu điểm nghi lỗi trong đề/lời giải, gợi ý trường hợp biên và soạn nháp feedback] ← AI
+→ [3 Auditor kiểm tra lại đề, lời giải, code và bản nháp; sửa feedback] ← CON NGƯỜI
+→ [4 Auditor quyết định và gửi feedback cho Expert] ← CON NGƯỜI
 ```
 
-Phương án quay về: nếu AI soạn nháp kém, bỏ sót nhiều lỗi hoặc ngừng chạy thì auditor quay về quy trình bảy bước thủ công ở bảng 4.1, ưu tiên xử lý các template đến hạn gần nhất trước để không trễ tiến độ.
+**Boundary:** AI không tự duyệt label, sửa label gốc hoặc gửi feedback. Thời gian từng bước của quy trình đề xuất chưa được đo. Nếu AI soạn nháp kém, bỏ sót lỗi hoặc ngừng chạy, Auditor quay về bảy bước thủ công ở bảng 4.1.
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
-|---|---:|---:|---|
-| Số bước | 7 | 4 | Tinh gọn các thao tác kiểm tra lặp lại |
-| Tổng thời gian | 8-12 phút/template | 3-5 phút/template | Target: giảm thời gian tìm lỗi và viết feedback |
-| Số bước thủ công | 7/7 | 2/4 | Auditor giữ vai trò kiểm soát cuối cùng |
-| Bottleneck chính | Viết feedback (Bước 7) | Auditor review + tinh chỉnh | Tập trung vào việc đánh giá chất lượng thay vì gõ văn bản |
-| Rủi ro mới phát sinh | | AI bỏ sót edge case của code hoặc hiểu sai logic Toán | Xử lý bằng boundary + Auditor check kỹ phần code |
+|---|---|---|---|
+| Số bước | 7 | 4 | Quy trình đề xuất gộp các bước hỗ trợ, không bỏ trách nhiệm kiểm tra của Auditor. |
+| Tổng thời gian | Chưa có baseline chung; ba lời kể ghi nhận 1–2 phút rà ngữ pháp/lần, 5–7 phút rà code/label và khoảng 15 phút xử lý label nhiều lỗi, gồm feedback/trao đổi | Mục tiêu giảm ít nhất 30% tổng thời gian trên các label cùng loại | Bấm giờ toàn bộ quy trình thủ công và quy trình có hỗ trợ trên bộ label thử nghiệm. |
+| Bước con người thực hiện | 7/7 | 2/4 bước chính; Auditor vẫn kiểm tra toàn bộ label trước khi gửi | Chưa thể suy ra thời gian tiết kiệm từ số bước. |
+| Điểm tốn thời gian | Khác nhau theo loại label | Có thể chuyển sang kiểm tra và sửa bản nháp AI | Cần đo riêng thời gian kiểm tra code, ngữ pháp và viết feedback. |
+| Rủi ro mới phát sinh | Lỗi có thể bị bỏ sót khi rà thủ công | AI có thể báo nhầm hoặc bỏ sót lỗi | Auditor xác minh trước khi gửi; nếu không đạt ngưỡng thì quay về quy trình thủ công. |
 
 ---
 
@@ -205,12 +217,12 @@ Phương án quay về: nếu AI soạn nháp kém, bỏ sót nhiều lỗi ho�
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | Auditor – người chịu trách nhiệm kiểm tra và đánh giá chất lượng feedback cho các label của Math Expert. |
-| **Quy trình** | 1. Nhận feedback từ các label của Math Expert. 2. Đọc và kiểm tra tính đúng sai của lời giải. 3. Đánh giá tính logic và nhất quán trong các bước giải. 4. Kiểm tra ngữ pháp, cách diễn đạt. 5. Kiểm tra code và các trường hợp biên (edge cases) nếu có. 6. Tổng hợp lỗi và đưa ra feedback hoặc kết luận đánh giá.|
-| **Bottleneck** | 	Auditor phải kiểm tra thủ công nhiều tiêu chí khác nhau trên từng feedback. Việc rà soát từng bước suy luận, tính đúng sai và các trường hợp biên trong code tốn thời gian, đồng thời có nguy cơ bỏ sót lỗi hoặc đánh giá thiếu nhất quán. |
-| **Impact** | 	Giảm thời gian kiểm tra feedback cho Auditor; tăng khả năng phát hiện lỗi; nâng cao độ chính xác và tính nhất quán trong quá trình đánh giá chất lượng label của Math Expert. |
-| **Success Metric** (baseline → target, cách đo) | - Review Time: Đo thời gian trung bình kiểm tra một feedback trước và sau khi có AI hỗ trợ. Error Detection Rate: Tỷ lệ lỗi được phát hiện trên tổng số lỗi đã được xác định trong bộ dữ liệu chuẩn. Accuracy: Tỷ lệ kết quả đánh giá đúng so với kết quả tham chiếu do Auditor có kinh nghiệm xác nhận. Baseline: Đo bằng quy trình kiểm tra thủ công hiện tại. Target đề xuất: Giảm 30% thời gian review, đồng thời duy trì độ chính xác phát hiện lỗi từ 90% trở lên. Các target cần được điều chỉnh sau khi đo baseline và thử nghiệm. |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | - AI chỉ đóng vai trò hỗ trợ kiểm tra và đưa ra cảnh báo, không tự quyết định cuối cùng về chất lượng feedback. Không tự ý sửa hoặc thay đổi nội dung feedback gốc. Không tự đưa ra kết luận đúng/sai khi không đủ dữ liệu hoặc không có cơ sở kiểm chứng. Không tự động phê duyệt hoặc loại bỏ label. HITL: Auditor phải kiểm tra lại các trường hợp AI không chắc chắn, phát hiện lỗi logic phức tạp, có nhiều cách giải hợp lệ, lỗi liên quan đến kiến thức toán chuyên sâu hoặc các trường hợp AI và đáp án tham chiếu không thống nhất. |
+| **Actor** | Auditor chịu trách nhiệm kiểm duyệt label của Math Expert và gửi feedback cho Expert. |
+| **Quy trình** | Nhận label gồm đề, lời giải và code sinh biến; kiểm tra tính đúng/sai, mạch lập luận, ngữ pháp và trường hợp biên; ghi nhận lỗi rồi viết feedback cho Expert. |
+| **Bottleneck** | Auditor phải kiểm tra nhiều thành phần của label. Thời gian tập trung ở khâu khác nhau tùy loại label: rà code, rà ngữ pháp hoặc giải thích lỗi trong feedback. |
+| **Impact** | Công việc rà soát và giải thích lỗi chiếm thời gian của Auditor; lỗi nhỏ hoặc trường hợp biên vẫn có thể bị bỏ sót. Tổng thời gian trung bình chưa được đo. |
+| **Success Metric** (baseline → target, cách đo) | Baseline: bấm giờ quy trình thủ công trên bộ label thử nghiệm, tách theo loại label. Target đề xuất: giảm ít nhất 30% tổng thời gian mà vẫn phát hiện ít nhất 90% lỗi đã được Auditor xác nhận. So sánh với quy trình có hỗ trợ trên cùng bộ label; ngưỡng cần rà lại sau khi đo baseline. |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | AI chỉ nêu điểm nghi lỗi và soạn nháp feedback; không sửa label gốc, tự duyệt label hoặc gửi feedback. Auditor kiểm tra lại đề, lời giải, code và mọi nhận định của AI trước khi quyết định. |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
@@ -230,14 +242,14 @@ Vì sao: đầu ra có đúng sai rõ theo bộ tiêu chí cố định (đúng 
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | Chuẩn hóa checklist ba tiêu chí, dùng mẫu feedback có sẵn các ô vị trí, lý do, hướng sửa | Đủ khi pain chủ yếu do quy trình rời rạc | Không giảm được phần đọc và viết feedback, vốn là bottleneck chính | Không |
+| **No AI** (sửa quy trình) | Chuẩn hóa checklist các tiêu chí và mẫu feedback gồm vị trí, lý do, hướng sửa | Có thể đủ nếu pain chủ yếu do quy trình rời rạc | Chưa biết mức giảm thời gian vì chưa thử trên cùng bộ label | Đối chứng trong pilot |
 | **Rule** | Linter chạy check cú pháp code, script chạy testcase cố định, template feedback dựng sẵn | Chỉ đủ cho phần code có điều kiện khai báo trước | Không đọc được lập luận lời giải bằng tiếng tự nhiên, bỏ sót lỗi logic | Không đủ dùng riêng |
 | **Workflow** | Các bước định sẵn: script gom template và chạy check cơ bản, AI phân tích lời giải, đối chiếu testcase và soạn nháp feedback, auditor review rồi tự gửi | Các bước kiểm tra cố định từ trước, AI chỉ làm một bước trong chuỗi | AI bỏ sót edge case hoặc hiểu sai logic toán, xử lý bằng boundary và auditor kiểm lại | Có |
 | **Agent** | AI tự quyết kiểm gì tiếp theo, tự mở file, tự lặp đến khi xong | Chỉ cần khi các bước không định sẵn được | Khó đặt boundary, khó truy xem AI sai ở đâu, chi phí và độ trễ cao hơn | Không |
 
 **Mức chọn:** Workflow
 
-**Vì sao không chọn mức đơn giản hơn:** Rule chỉ xử lý được phần code theo điều kiện khai báo trước, còn bottleneck thật là bước đọc lập luận lời giải và viết feedback bằng tiếng tự nhiên, phần đó Rule không làm được. No AI đã thử qua dạng checklist ba tiêu chí như hiện tại nhưng tổng thời gian 8-12 phút một template vẫn nằm ở bước đọc và viết, chưa giảm được. Còn Agent không cần thiết vì các bước kiểm tra đã cố định từ trước, không có bước nào cần AI tự quyết làm gì tiếp theo; mỗi mức lên thêm là thêm chi phí, độ trễ và cách hỏng mới.
+**Lý do thử Workflow:** Rule chỉ kiểm tra được điều kiện và testcase đã định nghĩa; chưa xử lý hết lập luận trong lời giải và nội dung feedback. Checklist và mẫu feedback là phương án đối chứng cần đo, vì nhóm chưa chứng minh Workflow nhanh hơn. Các bước kiểm tra đã xác định trước nên chưa có căn cứ để AI tự quyết chuỗi hành động như Agent.
 
 ### 6.3. AI Canvas rút gọn
 
@@ -246,14 +258,14 @@ Vì sao: đầu ra có đúng sai rõ theo bộ tiêu chí cố định (đúng 
 | **Prediction** — AI dự đoán / tạo ra gì? | AI đọc đề, lời giải, code và testcase rồi dự đoán chỗ nào nghi ngờ có lỗi logic, ngữ pháp hoặc trường hợp biên, kèm soạn nháp feedback giải thích cho từng chỗ |
 | **Judgment** — con người cân nhắc, quyết định gì? | Auditor cân nhắc nhận định của AI có đúng không, lỗi có đáng ghi không, mức độ nghiêm trọng ra sao và cách viết feedback đã rõ ràng chưa |
 | **Action** — hành động cuối cùng là gì, ai làm? | Auditor sửa bản nháp và tự tay gửi feedback cho Expert; AI không gửi |
-| **Outcome** — đo kết quả bằng gì? | Thời gian trung bình một template giảm từ 8-12 phút xuống dưới 5 phút, tỷ lệ bắt được lỗi trong bộ bài có lỗi đã biết trước giữ từ 90% trở lên |
+| **Outcome** — đo kết quả bằng gì? | Mục tiêu thử nghiệm: giảm ít nhất 30% tổng thời gian kiểm duyệt trên cùng loại label, phát hiện ít nhất 90% lỗi đã được xác nhận và giữ tỷ lệ báo nhầm dưới 20%; chưa có kết quả đo. |
 | **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | Mỗi lần chạy cần template label gồm đề, lời giải mẫu, code, testcase cùng bộ tiêu chí kiểm tra; dữ liệu này có sẵn trong hệ thống label |
 | **Feedback** — lấy phản hồi ở đâu để cải thiện? | So sánh bản nháp AI với feedback cuối cùng auditor gửi; mỗi chỗ auditor phải sửa là tín hiệu để cải thiện cách soạn nháp |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng: nhóm chọn augment, thể hiện ngay ở boundary trong PS v0 và quy trình tương lai là AI không tự gửi, auditor chốt cuối cùng. Giả định auditor muốn giảm thời gian chứ không muốn mất kiểm soát chất lượng sẽ được chốt qua phỏng vấn ở CP4.
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào: bỏ sót tệ hơn, vì feedback có lỗi đi thẳng xuống người học bên dưới label, còn báo nhầm chỉ làm auditor tốn thêm vài phút kiểm lại. Thiết kế xử lý: AI nghi ngờ chỗ nào thì flag kèm vị trí cụ thể thay vì im lặng bỏ qua, và auditor bắt buộc kiểm kỹ phần code cùng các chỗ AI không chắc chắn trước khi gửi.
+- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Ba phỏng vấn cho thấy Auditor đang chịu trách nhiệm kiểm duyệt và gửi feedback; chưa có câu trả lời trực tiếp về mức độ họ muốn giao cho AI. Nhóm chọn hỗ trợ: AI đưa ra nháp, Auditor kiểm tra và quyết định cuối cùng. Cần hỏi thêm mức chấp nhận này trước pilot.
+- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Bỏ sót có thể khiến lỗi trong label lọt qua kiểm duyệt; báo nhầm khiến Auditor mất thời gian kiểm tra thêm. Cả hai cần được đo. AI phải chỉ ra vị trí và lý do nghi lỗi; Auditor kiểm lại đề, lời giải và code trước khi gửi feedback.
 
 ---
 
@@ -261,13 +273,13 @@ Vì sao: đầu ra có đúng sai rõ theo bộ tiêu chí cố định (đúng 
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | Auditor của Math Expert, người chịu trách nhiệm cuối cùng về chất lượng feedback cho các label. |
-| **Quy trình** | Bốn bước ở mục 4.2: script gom template và chạy check cơ bản, AI phân tích lời giải đối chiếu testcase và soạn nháp feedback, auditor review và chỉnh, auditor tự gửi. |
-| **Bottleneck** | Đọc lập luận lời giải và viết feedback, hai phần chiếm phần lớn thời gian 8-12 phút hiện tại cho một template. |
-| **Impact** | Nếu không giải thì thời gian một template giữ nguyên ở mức 8-12 phút, chất lượng feedback phụ thuộc vào thể trạng và kinh nghiệm từng auditor tại thời điểm rà bài. |
-| **Success Metric** (baseline → target, cách đo) | Baseline: 8-12 phút một template, lấy từ bảng before/after ở mục 4. Target: dưới 5 phút một template, tỷ lệ bắt được lỗi trong bộ bài có lỗi đã xác định trước từ 90% trở lên. Cách đo: bấm giờ và chấm kết quả trên 10 template thử nghiệm, so với thời gian auditor làm thủ công cùng bộ bài đó. |
+| **Actor** | Auditor kiểm duyệt label của Math Expert và chịu trách nhiệm cuối cùng về feedback gửi Expert. |
+| **Quy trình** | Hiện tại Auditor nhận label, kiểm tra đề, lời giải, ngữ pháp và code sinh biến rồi viết feedback như mục 4.1. Quy trình đề xuất ở mục 4.2 thêm bước Rule và AI trước khi Auditor kiểm tra, quyết định và gửi feedback. |
+| **Bottleneck** | Ba phỏng vấn ghi nhận các điểm tốn thời gian khác nhau: rà code sinh biến, rà ngữ pháp lặp lại và viết feedback cho label nhiều lỗi. Chưa xác định bottleneck chung. |
+| **Impact** | Auditor phải dành thời gian cho các bước rà soát và giải thích lỗi; ngữ pháp hoặc trường hợp biên vẫn có nguy cơ bị bỏ sót. Chưa đo tổng thời gian trung bình. |
+| **Success Metric** (baseline → target, cách đo) | Baseline: bấm giờ tổng thời gian kiểm duyệt thủ công theo từng loại label, chưa có số chung. Target đề xuất: giảm ít nhất 30% tổng thời gian; phát hiện ít nhất 90% tổng số lỗi đã được Auditor xác nhận và giữ báo nhầm dưới 20% số chỗ AI flag. Cách đo: dùng bộ label có lỗi tham chiếu, so sánh hai quy trình trên các label cùng loại và tính cả thời gian Auditor sửa nháp AI. |
 | **Boundary** | AI không tự gửi feedback, không tự sửa nội dung feedback gốc, không tự chốt đúng sai khi thiếu dữ liệu; các trường hợp AI không chắc chắn, logic phức tạp, nhiều cách giải hợp lệ đều do auditor quyết. |
-| **AI intervention point** | Bước 2 của quy trình tương lai (mục 4.2): AI phân tích lời giải, đối chiếu testcase và soạn nháp feedback cho auditor review. |
+| **AI intervention point** | Bước 2 của quy trình tương lai (mục 4.2): AI nêu điểm nghi lỗi trong đề và lời giải, gợi ý trường hợp biên của code và soạn nháp feedback để Auditor kiểm tra. |
 | **Mức chọn** | Workflow |
 | **Rủi ro & người kiểm tra** | Rủi ro AI bỏ sót lỗi hoặc hiểu sai logic: auditor kiểm lại toàn bộ bản nháp trước khi gửi. Rủi ro dữ liệu nội bộ: nhóm xác nhận quy định công ty về việc dùng AI trên dữ liệu label trước khi pilot, người theo dõi là cả nhóm qua mục 3.1. |
 
@@ -275,9 +287,9 @@ Vì sao: đầu ra có đúng sai rõ theo bộ tiêu chí cố định (đúng 
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| Success Metric | Baseline ghi chung chung là "quy trình thủ công hiện tại", chưa có số cụ thể | Baseline có số là 8-12 phút một template, cách đo cụ thể là bấm giờ trên 10 template | Metric không có số thì không biết pilot thành hay không, không đo được |
+| Success Metric | Đề xuất giảm 30% thời gian nhưng chưa có baseline đo được | Giữ target đề xuất, nêu rõ cách bấm giờ và so sánh theo loại label | Không thể khẳng định cải thiện trước khi có số đo thủ công và pilot. |
 | AI intervention point | Không có trường này | Ghi rõ AI chen vào ở bước 2 của quy trình tương lai | CP6 bắt buộc chỉ rõ điểm AI can thiệp trong quy trình |
-| Mức chọn | Không có trường này | Workflow | Sau khi so sánh bốn mức ở mục 6, mức đơn giản hơn không đủ, Agent là thừa |
+| Mức chọn | Không có trường này | Workflow để thử và so với No AI/Rule | Cần kiểm tra liệu bước AI có tạo thêm giá trị so với checklist và script. |
 | Rủi ro & người kiểm tra | Không có trường này | Ghi rõ rủi ro bỏ sót và rủi ro dữ liệu, auditor là người kiểm cuối | Cần người chịu trách nhiệm cuối cùng rõ ràng trước khi có quyết định |
 
 **Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
@@ -285,8 +297,8 @@ Vì sao: đầu ra có đúng sai rõ theo bộ tiêu chí cố định (đúng 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
 | 1 | Không bịa nhận định | Mọi nhận định lỗi đều chỉ tới vị trí cụ thể trong đề, lời giải hoặc code | Có nhận định không truy ra được nguồn trong dữ liệu đầu vào |
-| 2 | Bắt được lỗi đã biết | Trong bộ 10 bài có lỗi đã xác định trước, AI flag từ 9 lỗi trở lên | Bỏ sót lỗi logic hoặc trường hợp biên có trong bộ bài |
-| 3 | Báo nhầm ở mức chấp nhận được | Số chỗ AI flag mà auditor xác nhận không có lỗi chiếm dưới 20% số flag | Quá nửa số flag là báo nhầm, khiến auditor phải đi kiểm lại gần như toàn bộ bài |
+| 2 | Bắt được lỗi đã biết | AI flag ít nhất 90% tổng số lỗi trong bộ label có lỗi được Auditor xác nhận trước | Tỷ lệ phát hiện dưới 90%, gồm cả lỗi Toán và trường hợp biên trong code. |
+| 3 | Báo nhầm ở mức chấp nhận được | Số chỗ AI flag mà Auditor xác nhận không có lỗi chiếm dưới 20% tổng số flag | Tỷ lệ báo nhầm từ 20% trở lên. |
 | 4 | Nháp đủ định dạng feedback | Mỗi lỗi được soạn đủ ba phần: vị trí, lý do sai, hướng sửa | Thiếu một trong ba phần, hoặc viết chung chung không chỉ được chỗ sai |
 
 ---
@@ -297,27 +309,32 @@ Vì sao: đầu ra có đúng sai rõ theo bộ tiêu chí cố định (đúng 
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Thấp | Auditor mất 8-12 phút/template cho công việc rà soát thủ công lặp đi lặp lại; nhu cầu tự động hóa tìm lỗi và soạn feedback là rất thực tế |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Trung bình | Ba Auditor nêu các bước tốn thời gian khác nhau; chưa đo tổng thời gian hay xác nhận họ muốn dùng workflow đề xuất. |
 | **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Trung bình | AI có thể phân tích sai logic toán phức tạp hoặc bỏ sót edge case của code; Auditor cần có kỹ năng đối chiếu, kiểm tra kỹ trước khi gửi feedback cho Expert |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Thấp | Template, lời giải toán học và code đều ở định dạng văn bản có sẵn, dễ dàng tích hợp script kiểm tra logic cơ bản và prompt AI chuyên biệt |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | Thấp | Không vi phạm quy định dữ liệu nội bộ; AI chỉ đóng vai trò trợ lý soạn nháp, Auditor trực tiếp chịu trách nhiệm vận hành và duyệt cuối cùng. |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Trung bình | Label có đề, lời giải và code sinh biến; nhóm chưa thử đọc định dạng nội bộ, chạy code an toàn hoặc tích hợp các công cụ được research. |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | Cao | Chưa xác nhận quy định công ty về dùng dữ liệu label với AI. Auditor sẽ là người vận hành và duyệt cuối; chi phí cũng chưa được đo. |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go
+**Quyết định:** Go cho pilot có điều kiện.
 
-**Lý do:** Giải quyết đúng điểm nghẽn ở khâu rà soát và viết feedback, giúp giảm 50-70% thời gian xử lý mà vẫn giữ quyền kiểm soát chất lượng hoàn toàn thuộc về con người.
+**Lý do:** Ba cuộc phỏng vấn xác nhận công việc rà soát và viết feedback có phần tốn thời gian, nhưng chưa chứng minh được workflow tiết kiệm thời gian hay phát hiện lỗi tốt hơn. Pilot nhỏ giúp đo hai điều này; Auditor vẫn giữ quyết định cuối.
 
-**Nếu Go — pilot nhỏ nhất:** Chạy pilot trong 4 tuần với 1 Auditor, áp dụng cho việc kiểm duyệt template Toán có kèm code, tự ghi lại thời gian xử lý và tỷ lệ chính xác của feedback.
+**Điều kiện trước pilot:** Xác nhận công ty cho phép dùng dữ liệu label với công cụ AI được chọn; nếu chưa được phép thì chưa chạy AI trên dữ liệu nội bộ. Chuẩn bị bộ label có lỗi tham chiếu và bấm giờ quy trình thủ công. Sau đó thử trong 4 tuần với 1 Auditor trên label Toán có code sinh biến, ghi thời gian từng bước, lỗi phát hiện và báo nhầm.
 
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …): Nếu sau 4 tuần pilot mà tỷ lệ feedback sai sót do AI tăng lên hoặc thời gian review/sửa nháp không giảm so với thủ công, thì quay về quy trình thủ công hoàn toàn.
+**Ngưỡng dừng:** Sau 4 tuần, nếu tổng thời gian không giảm ít nhất 30% trên các label cùng loại, tỷ lệ phát hiện dưới 90% lỗi tham chiếu hoặc tỷ lệ báo nhầm từ 20% trở lên, dừng Workflow và quay về quy trình thủ công; xem xét checklist/Rule như phương án tiếp theo.
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+- Nhóm mới ghi nhận ba cuộc phỏng vấn Auditor. Mỗi người nêu một bước tốn thời gian khác nhau: viết feedback cho label nhiều lỗi, rà ngữ pháp, hoặc kiểm tra code của label có lời giải tốt. Mẫu này chưa đủ để xác định một bottleneck chung cho mọi loại label. Bước tiếp theo là bấm giờ từng công đoạn trên các label thực tế, tách theo loại lỗi và độ phức tạp.
+- Các mốc 1–2, 5–7 và khoảng 15 phút trong mục 4.1 là lời kể cho những tình huống khác nhau, không cộng lại thành thời gian trung bình/label. Pilot cần đo cả thời gian đọc, kiểm tra code, sửa nháp AI, trao đổi thêm với Expert và gửi feedback trước khi kết luận có tiết kiệm thời gian.
+- Nhóm chưa thử workflow trên bộ label có đáp án tham chiếu. Các ngưỡng phát hiện từ 90% lỗi và báo nhầm dưới 20% là mục tiêu đề xuất, chưa phải kết quả đã đạt. Cần chuẩn bị các label có lỗi đã được Auditor xác nhận, gồm lỗi Toán, ngữ pháp và trường hợp biên do code sinh biến, rồi so sánh quy trình thủ công với quy trình có hỗ trợ trên cùng bộ bài.
+- STACK, Hypothesis và MathDebugger cho thấy những cách kiểm tra từng phần của bài toán. Nhóm chưa xác nhận khả năng tích hợp với định dạng label, ngôn ngữ code và hệ thống nội bộ. Cần thử trên một số label được phép sử dụng và kiểm tra chính sách công ty về xử lý dữ liệu trước khi chạy pilot.
 
 ## 10. Tài liệu tham khảo
 
--
+- STACK Docs, [Question authoring workflow](https://docs.stack-assessment.org/en/STACK_question_admin/Authoring_workflow/) và [Deploying question variants](https://docs.stack-assessment.org/en/STACK_question_admin/Deploying/). Tham khảo cấu trúc đề có biến và cách kiểm thử các biến thể trước khi sử dụng.
+- Hypothesis, [Introduction to Hypothesis](https://hypothesis.readthedocs.io/en/latest/tutorial/introduction.html). Tham khảo cách tạo đầu vào và tìm trường hợp biên khi kiểm thử code.
+- MathDebugger, [A Benchmark for Type-Aware Error Detection in Synthetic Math Data](https://haolpku.github.io/MathDebugger/). Tham khảo cách phân biệt lỗi ở đề và ở lời giải Toán.

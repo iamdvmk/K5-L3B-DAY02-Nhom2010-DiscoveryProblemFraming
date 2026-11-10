@@ -5,8 +5,8 @@
 ## Thông tin nhóm
 
 - Tên nhóm: Nhóm 2010
-- Candidate problem nhóm chọn (1 câu): Kiểm tra chất lượng feedback cho các label của Math Expert, do auditor mất nhiều thời gian rà từng bài để tìm lỗi logic, ngữ pháp và các trường hợp biên
-- Quyết định cuối (Go / Not Yet / No-Go):
+- Candidate problem nhóm chọn (1 câu): Auditor mất thời gian kiểm duyệt label gồm đề bài, lời giải và code sinh biến của Math Expert, rồi viết feedback chỉ rõ lỗi cho Expert.
+- Quyết định cuối (Go / Not Yet / No-Go): Go cho pilot có điều kiện, sau khi xác nhận quyền dùng dữ liệu label nội bộ với công cụ AI.
 
 ## Thành viên
 
@@ -15,7 +15,7 @@
 | 1 | Đào Vũ Minh Khánh | 2A202603878 | Nhóm trưởng, phụ trách quy trình | https://github.com/iamdvmk |
 | 2 | Nguyễn Long Vũ | 2A202603842 | Điều phối thời gian, tổng hợp nội dung | https://github.com/mhoo40 |
 | 3 | Đỗ Quốc Khánh | 2A202603823 | Phụ trách kiểm chứng (CP4), mức can thiệp AI (CP6) | https://github.com/dqk2210 |
-| 4 | Vương Trường Giang | 2A202603834 | Người phản biện chính | https://github.com/vtgiang213 |
+| 4 | Vương Trường Giang | 2A202603834 | Phản biện, phụ trách research giải pháp hiện có (CP4) | https://github.com/vtgiang213 |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
@@ -26,7 +26,7 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 | Checkpoint | Người chính | Người hỗ trợ | Sản phẩm |
 |---|---|---|---|
 | CP3 — Hội tụ nhóm | Minh Khánh | Quốc Khánh, Giang, Vũ | Cluster, cây OST, bảng chấm điểm |
-| CP4 — Kiểm chứng | Quốc Khánh | Minh Khánh, Vũ | Assumption map, snapshot hoặc survey |
+| CP4 — Kiểm chứng | Quốc Khánh, Giang | Minh Khánh, Vũ | Assumption map, snapshot hoặc survey |
 | CP4 — Research | Giang | Minh Khánh, Quốc Khánh | Bảng research có link |
 | CP5 — Quy trình trước/sau | Vũ | Quốc Khánh, Giang | Quy trình + bảng before/after |
 | CP5 — Problem Statement v0 | Minh Khánh | Giang | Problem Statement v0 |
@@ -96,20 +96,25 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 **Phần việc phụ trách:**
 
 - Phản biện các bài toán được đưa ra và hỗ trợ nhóm hội tụ ở CP3.
-- Phụ trách research giải pháp đã có ở CP4.
+- Phụ trách survey + research giải pháp đã có ở CP4.
 - Hỗ trợ nhóm mô tả quy trình trước/sau và Problem Statement v0 ở CP5.
+- Rà soát tính nhất quán giữa kết quả phỏng vấn, metric và quyết định của bài nhóm.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
 - Trình bày ba Problem Card về trích xuất dữ liệu tai nạn, audit label của Math Expert và điều chỉnh CV theo JD.
-- Đặt câu hỏi về tần suất chỉnh CV, cách nhận biết kiến thức chưa hiểu và hạn chế của công cụ tổng hợp tài liệu hiện có. Tham gia góp ý nhóm và chấm điểm bài toán.
-- Tìm hiểu STACK, Hypothesis và MathDebugger, lập bảng research có link và đối chiếu với quy trình kiểm duyệt label gồm đề bài, lời giải và code tạo bộ số liệu.
-- Rà soát quy trình và Problem Statement từ góc nhìn Auditor, chú ý việc kiểm tra logic lời giải, các trường hợp biên và feedback cho Expert.
+- Đặt câu hỏi về tần suất chỉnh CV theo JD, cách người học nhận biết kiến thức chưa hiểu và khoảng trống của công cụ tổng hợp tài liệu; góp ý cách gom cluster và chấm điểm candidate ở CP3.
+- Nêu rõ label gồm đề bài, lời giải và code sinh biến để nhóm mô tả đúng công việc của Auditor, thay vì chỉ nói chung là kiểm tra feedback.
+- Phụ trách 3 bảng interview các Auditor.
+- Phụ trách bảng research CP4: chọn STACK, Hypothesis và MathDebugger, kiểm tra link và phân biệt phần mỗi nguồn có thể hỗ trợ với điều chưa được chứng minh trên dữ liệu nội bộ.
+- Cung cấp các tình huống Auditor để nhóm tổng hợp ba interview snapshot; từ đó chỉ ra thời gian có thể tập trung ở các bước khác nhau theo loại label, chưa thể kết luận viết feedback luôn là bottleneck.
+- Góp ý quy trình trước/sau và Problem Statement v0: làm rõ bước rà code sinh biến, trường hợp biên, vị trí lỗi và feedback cho Expert; đề nghị đo thời gian từng bước trước khi đặt baseline chung.
+- Rà soát lập luận CP6: phân biệt số liệu từ lời kể với target pilot, lưu ý điều kiện được phép dùng dữ liệu nội bộ trước khi thử Workflow.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
-- Mục 2.1–2.4 và 3.3 trong `report/team/group_report.md`.
-- Mục 2–3 trong `report/individual/2A202603834_VuongTruongGiang.md`.
+- Mục 2.1–2.4 (pitch, phản biện và hội tụ), 3.2–3.3 (snapshot và bảng research), 4–5 (quy trình và Problem Statement v0), 8–9 (quyết định có điều kiện và giới hạn bằng chứng) trong `report/team/group_report.md`.
+- Mục 2–5 trong `report/individual/2A202603834_VuongTruongGiang.md` ghi lại Problem Card, đóng góp và cách dùng AI để kiểm tra.
 - Commit `8546c87` — `Giang add individual work & research`.
 
 **Điều mình học được từ phần nhóm:**
