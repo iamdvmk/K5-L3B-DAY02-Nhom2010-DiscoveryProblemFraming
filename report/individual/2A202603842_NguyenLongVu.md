@@ -129,16 +129,16 @@ Card #2: mục lục và index tốt, hoặc hỏi senior “đọc phần nào�
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | Pitch 3 problem mình đã lựa chọn | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: "Với" | |
+| Pitch Problem Card | Pitch 3 problem mình đã lựa chọn | Nhóm có thêm dữ liệu cho Cluster |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
 | Nhận phản biện | Câu hỏi tôi nhận được: Đã có giải pháp cho vấn đề tổng hợp tư liệu | Tôi đã sửa gì: Thêm bước research công cụ có sẵn |
-| Gom cluster / cây OST | Tham gia gom 12 candidate thành 4 cluster | |
-| Chọn candidate problem | | |
+| Gom cluster / cây OST | Tham gia gom 12 candidate thành 4 cluster | Nhóm phân thành 4 nhóm |
+| Chọn candidate problem | Tham gia chấm điểm | Cả nhóm thống nhất chọn "Tự động kiểm tra chất lượng feedback cho các label của Math Expert" |
 | Kiểm chứng / research | | |
-| Quy trình nhóm | Vẽ quy trình hiện tại và tương lai cho vấn đề tổng hợp tài liệu khi bắt đầu dự án | Quy trình tương lai gồm 5 bước, khoảng 35'/dự án (giảm khoảng 50') |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Quy trình nhóm | Mô tả quy trình hiện tại và tương lai khi có công cụ hỗ trợ | Quy trình tương lai gồm 5 bước, khoảng 35'/dự án (giảm khoảng 50') |
+| Problem Statement | Hỗ trợ Minh Khánh làm Problem Statement | Cung cấp thông tin từ Workflow Trc/Sau để tổng hợp |
+| Mức can thiệp AI | Hỗ trợ Quốc Khánh đánh giá mức ca thiệp AI | Cho biết bước nào Rule, AI hay Người và baseline/target bằng phút |
+| Quyết định | Đề xuất mức can thiệp | Group quyết định Go |
 
 ---
 
@@ -171,6 +171,7 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Tìm vấn đề phức tạp hơn, giảm các vấn đề có thể giải quyết bằng Rule nhằm cho nhóm thêm lựa chọn có ý nghĩa khi tạo cluster.
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
