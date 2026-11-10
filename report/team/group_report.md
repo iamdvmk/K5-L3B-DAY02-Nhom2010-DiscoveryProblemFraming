@@ -297,24 +297,20 @@ Vì sao: đầu ra có đúng sai rõ theo bộ tiêu chí cố định (đúng 
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Thấp | Auditor mất 8-12 phút/template cho công việc rà soát thủ công lặp đi lặp lại; nhu cầu tự động hóa tìm lỗi và soạn feedback là rất thực tế |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Trung bình | AI có thể phân tích sai logic toán phức tạp hoặc bỏ sót edge case của code; Auditor cần có kỹ năng đối chiếu, kiểm tra kỹ trước khi gửi feedback cho Expert |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Thấp | Template, lời giải toán học và code đều ở định dạng văn bản có sẵn, dễ dàng tích hợp script kiểm tra logic cơ bản và prompt AI chuyên biệt |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | Thấp | Không vi phạm quy định dữ liệu nội bộ; AI chỉ đóng vai trò trợ lý soạn nháp, Auditor trực tiếp chịu trách nhiệm vận hành và duyệt cuối cùng. |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** Go
 
-**Lý do:**
+**Lý do:** Giải quyết đúng điểm nghẽn ở khâu rà soát và viết feedback, giúp giảm 50-70% thời gian xử lý mà vẫn giữ quyền kiểm soát chất lượng hoàn toàn thuộc về con người.
 
-**Nếu Go — pilot nhỏ nhất:**
+**Nếu Go — pilot nhỏ nhất:** Chạy pilot trong 4 tuần với 1 Auditor, áp dụng cho việc kiểm duyệt template Toán có kèm code, tự ghi lại thời gian xử lý và tỷ lệ chính xác của feedback.
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
-
-**Nếu No-Go — nên làm gì thay AI:**
-
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+**Ngưỡng dừng** (nếu sau … mà … thì quay về …): Nếu sau 4 tuần pilot mà tỷ lệ feedback sai sót do AI tăng lên hoặc thời gian review/sửa nháp không giảm so với thủ công, thì quay về quy trình thủ công hoàn toàn.
 
 ---
 
