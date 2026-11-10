@@ -335,6 +335,24 @@ Vì sao: đầu ra có đúng sai rõ theo bộ tiêu chí cố định (đúng 
 
 ## 10. Tài liệu tham khảo
 
+Các framework dùng trong bài lấy từ tài liệu nguồn của lab, xem bản tổng hợp kèm tóm tắt tại docs/03-international-frameworks.md:
+
+- Design Council, Double Diamond, Framework for Innovation: https://www.designcouncil.org.uk/resources/framework-for-innovation/
+- Intercom, How we accidentally invented Job Stories: https://www.intercom.com/blog/accidentally-invented-job-stories/
+- Teresa Torres, Opportunity Solution Trees: https://www.producttalk.org/opportunity-solution-trees/
+- David Bland, Assumptions Mapping (Strategyzer): https://www.strategyzer.com/library/how-assumptions-mapping-can-focus-your-teams-on-running-experiments-that-matter
+- Rob Fitzpatrick, The Mom Test: https://www.momtestbook.com/
+- Teresa Torres, The Interview Snapshot: https://www.producttalk.org/interview-snapshot/
+- Jeff Gothelf, Business Problem Statement vs Opportunity Statement: https://jeffgothelf.com/blog/business-problem-statement-opportunity-statement/
+- Google PAIR Guidebook, User Needs: https://pair.withgoogle.com/chapter/user-needs/
+- Anthropic, Building Effective Agents: https://www.anthropic.com/research/building-effective-agents
+- Harvard Business Review, A Simple Tool to Start Making Decisions with the Help of AI (AI Canvas): https://hbr.org/2018/04/a-simple-tool-to-start-making-decisions-with-the-help-of-ai
+- Marty Cagan, SVPG, The Four Big Risks: https://www.svpg.com/four-big-risks/
+- Microsoft Research, Guidelines for Human-AI Interaction: https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/
+- NIST AI RMF Playbook, MAP: https://airc.nist.gov/airmf-resources/playbook/map/
+
+Nguồn trong bảng research ở mục 3.3:
+
 - STACK Docs, [Question authoring workflow](https://docs.stack-assessment.org/en/STACK_question_admin/Authoring_workflow/) và [Deploying question variants](https://docs.stack-assessment.org/en/STACK_question_admin/Deploying/). Tham khảo cấu trúc đề có biến và cách kiểm thử các biến thể trước khi sử dụng.
 - Hypothesis, [Introduction to Hypothesis](https://hypothesis.readthedocs.io/en/latest/tutorial/introduction.html). Tham khảo cách tạo đầu vào và tìm trường hợp biên khi kiểm thử code.
 - MathDebugger, [A Benchmark for Type-Aware Error Detection in Synthetic Math Data](https://haolpku.github.io/MathDebugger/). Tham khảo cách phân biệt lỗi ở đề và ở lời giải Toán.
