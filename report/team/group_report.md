@@ -5,10 +5,10 @@
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm: Nhóm 2010
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
-- Quyết định cuối: Go / Not Yet / No-Go
+- Candidate problem được chọn (1 câu): Tự động kiểm tra chất lượng feedback cho các label của Math Expert
+- Quyết định cuối: Go
 
 ---
 
@@ -18,57 +18,74 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
+| 1 | Minh Khánh | Khi chuẩn bị CV để ứng tuyển nhiều vị trí, tôi muốn chỉnh sửa CV nhanh theo từng JD để không phải viết lại gần như từ đầu cho mỗi công việc. | Người ứng tuyển nhiều công ty trong cùng một khoảng thời gian. | | Nhu cầu thực sự đến đâu? |
+| 2 | Minh Khánh | Khi muốn mua một sản phẩm, tôi muốn hiểu nhanh sản phẩm nào phù hợp với nhu cầu để không phải đọc hàng chục bài review. | Người tiêu dùng thường xuyên mua hàng qua mạng | | |
+| 3 | Minh Khánh | Khi tự học một môn có nhiều kiến thức và deadline, tôi muốn có cách theo dõi những nội dung đã học và chưa hiểu để không phải liên tục xem lại toàn bộ tài liệu. | Người học đang ôn tập, chuẩn bị lượng lớn kiến thức | | |
+| 4 | Vũ | Khi làm dự án, tôi muốn tổng hợp tài liệu để 
+hiểu cách làm sản phẩm. | Intern tìm thông tin, 
+Senior/Lead đưa tài liệu | | |
+| 5 | Vũ | Khi tài liệu công ty được cập nhật, tôi muốn 
+biết phần nào thay đổi so với bản cũ, 
+để không làm theo thông tin lỗi thời.| Intern và Developers 
+được quan sát 
+kiểm tra thông tin | | |
+| 6 | Vũ | Khi được giao một tài liệu dài, tôi muốn nắm 
+phần liên quan đến task của mình, 
+để bắt tay làm mà không phải đọc hết. | Các Intern khi tìm hiểu
+tài liệu được giao | | |
+| 7 | Quốc Khánh | Khi nhận đề tài nghiên cứu khoa học, tôi muốn nắm được ý chính và cách làm của paper tiếng Anh dài hàng chục trang, để biết được phương pháp và kết quả mà không phải đọc dính từng trang một| Sinh viên làm nghiên cứu khoa học hoặc tự tìm hiểu chủ đề mới | | |
+| 8 | Quốc Khánh |  Khi kỳ thi kết thúc môn học sắp đến, tôi muốn chọn lọc được những phần quan trọng nhất đã học trong kỳ về cùng một chỗ, để ôn thi có trọng tâm thay vì mở lại từng slide từ đầu| Sinh viên ôn thi cuối kỳ | | |
+| 9 | Quốc Khánh | Khi giữa tuần mà các thành viên trong nhóm project chưa báo tiến độ, tôi muốn biết phần của ai đã xong đến đâu, để không phải nhắn tin hỏi từng người nhiều lần | Trưởng nhóm project | | |
+| 10 | Giang | Khi phân tích các báo cáo tai nạn giao thông, tôi muốn trích xuất 11 trường thông tin quan trọng (về điều kiện môi trường, hạ tầng giao thông và các phương tiện liên quan), đồng thời gán cho mỗi trường một giá trị thuộc tập giá trị định trước để chuyển đổi nội dung báo cáo thành dữ liệu có cấu trúc và nhất quán. | Sinh viên nghiên cứu, nhà nghiên cứu xe tự hành | | |
+| 11 | Giang | Khi đưa feed back cho các label của Math Expert, tôi muốn tự động kiểm tra tính đúng sai, logic của lời giải, ngữ pháp và các trường hợp biên trong code để phát hiện lỗi nhanh chóng, giảm thời gian đọc và rà soát thủ công.| Auditor | | |
+| 12 | Giang | Khi muốn ứng tuyển một vị trí, tôi muốn điều chỉnh CV phù hợp với yêu cầu trong JD để làm nổi bật những kỹ năng và kinh nghiệm liên quan, tăng mức độ phù hợp của hồ sơ với vị trí ứng tuyển. | Người tìm việc, đặc biệt là sinh viên mới ra trường | | |
 
 ### 2.2. Cluster
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A | | |
-| B | | |
-| C | | |
-
+| A | #1, #12 | Chỉnh CV theo yêu cầu từng JD để ứng tuyển nhiều nơi cùng lúc |
+| B | #2, #4, #5, #6, #7, #8 | Đọc nhiều tài liệu/nguồn để nắm đúng phần mình cần (review sản phẩm, tài liệu dự án, tài liệu công ty, paper, bài ôn thi) |
+| C | #10, #11 | Xử lý nội dung theo tập tiêu chí định trước (trích xuất 11 trường từ báo cáo, chấm bài theo 3 tiêu chí)|
+| D | #3, #9 | Theo dõi trạng thái để không phải xem lại toàn bộ (đã học/chưa hiểu, tiến độ từng người) |
 ### 2.3. Opportunity Solution Tree rút gọn
 
 Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
 
 ```text
-OUTCOME: 
-├── Opportunity A: 
-├── Opportunity B: 
-└── Opportunity C: 
+OUTCOME: Giảm thời gian kiểm tra chất lượng feedback cho
+các label của Math Expert, đồng thời đảm bảo
+feedback chính xác, logic và nhất quán.
+├── Opportunity A:
+│   Feedback cần được kiểm tra trên nhiều khía cạnh
+│   như tính đúng sai, logic lời giải, ngữ pháp và
+│   các trường hợp biên trong code, khiến Auditor
+│   phải dành nhiều thời gian rà soát thủ công.
+│
+├── Opportunity B:
+│   Một số lỗi trong lời giải hoặc code khó phát hiện
+│   khi chỉ đọc feedback thông thường, đặc biệt là
+│   lỗi logic, trường hợp biên và các bước suy luận
+│   chưa đầy đủ.
+│
+└── Opportunity C:
+    Việc đánh giá feedback có thể phụ thuộc vào
+    kinh nghiệm và cách nhìn nhận của từng Auditor,
+    dẫn đến kết quả kiểm tra thiếu nhất quán
+    giữa những người đánh giá khác nhau.
 ```
-
-Những ý đã gạch bỏ vì là solution đội lốt opportunity:
-
--
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
+| Kiểm tra feedback Math Expert | 5 | 5 | 5 | 4 | 5 | 5 | 5 | 34 |
+| Trích xuất thông tin tai nạn | 5 | 5 | 4 | 5 | 4 | 5 | 4 | 32 |
+| Đọc hiểu paper nghiên cứu | 5 | 5 | 5 | 4 | 5 | 5 | 5 | 34 |
 
-**Candidate được chọn:**
+**Candidate được chọn:**Tự động kiểm tra chất lượng feedback cho các label của Math Expert.
 
-**Vì sao chọn:**
-
-**Vì sao loại các candidate còn lại:**
-
-**Xử lý bất đồng (nếu có):**
+**Vì sao chọn:** Actor cụ thể, quy trình rõ ràng, pain có ý nghĩa, impact có thể đo lường
 
 ---
 
@@ -177,16 +194,42 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Auditor – người chịu trách nhiệm kiểm tra và đánh giá chất lượng feedback cho các label của Math Expert. |
+| **Quy trình** | 1. Nhận feedback từ các label của Math Expert. 
+
+ 2. Đọc và kiểm tra tính đúng sai của lời giải. 
+
+ 3. Đánh giá tính logic và nhất quán trong các bước giải. 
+
+ 4. Kiểm tra ngữ pháp, cách diễn đạt. 
+
+ 5. Kiểm tra code và các trường hợp biên (edge cases) nếu có. 
+
+ 6. Tổng hợp lỗi và đưa ra feedback hoặc kết luận đánh giá.|
+| **Bottleneck** | 	Auditor phải kiểm tra thủ công nhiều tiêu chí khác nhau trên từng feedback. Việc rà soát từng bước suy luận, tính đúng sai và các trường hợp biên trong code tốn thời gian, đồng thời có nguy cơ bỏ sót lỗi hoặc đánh giá thiếu nhất quán. |
+| **Impact** | 	Giảm thời gian kiểm tra feedback cho Auditor; tăng khả năng phát hiện lỗi; nâng cao độ chính xác và tính nhất quán trong quá trình đánh giá chất lượng label của Math Expert. |
+| **Success Metric** (baseline → target, cách đo) | - Review Time: Đo thời gian trung bình kiểm tra một feedback trước và sau khi có AI hỗ trợ. 
+
+ - Error Detection Rate: Tỷ lệ lỗi được phát hiện trên tổng số lỗi đã được xác định trong bộ dữ liệu chuẩn. 
+
+ - Accuracy: Tỷ lệ kết quả đánh giá đúng so với kết quả tham chiếu do Auditor có kinh nghiệm xác nhận. 
+
+ Baseline: Đo bằng quy trình kiểm tra thủ công hiện tại. 
+
+ Target đề xuất: Giảm 30% thời gian review, đồng thời duy trì độ chính xác phát hiện lỗi từ 90% trở lên. Các target cần được điều chỉnh sau khi đo baseline và thử nghiệm. |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | - AI chỉ đóng vai trò hỗ trợ kiểm tra và đưa ra cảnh báo, không tự quyết định cuối cùng về chất lượng feedback. 
+
+ - Không tự ý sửa hoặc thay đổi nội dung feedback gốc. 
+
+ - Không tự đưa ra kết luận đúng/sai khi không đủ dữ liệu hoặc không có cơ sở kiểm chứng. 
+
+ - Không tự động phê duyệt hoặc loại bỏ label. 
+
+ - HITL: Auditor phải kiểm tra lại các trường hợp AI không chắc chắn, phát hiện lỗi logic phức tạp, có nhiều cách giải hợp lệ, lỗi liên quan đến kiến thức toán chuyên sâu hoặc các trường hợp AI và đáp án tham chiếu không thống nhất. |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
--
+-Làm thế nào xác định AI thực sự tốt hơn quy trình thủ công? Đồng ý. Cần thiết kế bộ test có đáp án tham chiếu, đo thời gian và độ chính xác của cả quy trình thủ công lẫn quy trình có AI hỗ trợ.
 
 ---
 

@@ -5,8 +5,8 @@
 ## Thông tin nhóm
 
 - Tên nhóm: Nhóm 2010
-- Candidate problem nhóm chọn (1 câu): 
-- Quyết định cuối (Go / Not Yet / No-Go):
+- Candidate problem nhóm chọn (1 câu): Tự động kiểm tra chất lượng feedback cho các label của Math Expert
+- Quyết định cuối (Go / Not Yet / No-Go): Go
 
 ## Thành viên
 
