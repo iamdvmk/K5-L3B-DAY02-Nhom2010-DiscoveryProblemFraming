@@ -158,10 +158,10 @@ Mình đã đưa card 1 cho AI đóng vai product manager hoài nghi để phả
 |---|---|---|---|---|
 | CP1 Scan | Nhờ AI gợi ý thêm ý sau khi đã tự scan trước | Gợi ý thêm được vài góc như mua hàng online, chỉnh CV theo JD | Vài ý không phải trải nghiệm của mình như việc CLB, chọn elective | Bỏ hết ý lạ, giữ lại ý mình thật sự gặp và tự điền lại số liệu theo tuần của mình |
 | CP2 Problem Card | Đưa card ôn thi cho AI đóng vai product manager hoài nghi | Chỉ ra được metric chưa đo được việc bỏ sót và actor còn rộng | AI sẵn sàng viết lại cả card thay mình | Chỉ nhận lấy điểm yếu, cách sửa do mình quyết |
-| CP4 Research | đang cập nhật sau khi nhóm làm xong phần research | | | |
-| CP5 Quy trình | đang cập nhật sau buổi nhóm | | | |
-| CP5–6 Problem Statement | đang cập nhật sau buổi nhóm | | | |
-| CP6 Mức can thiệp / quyết định | đang cập nhật sau buổi nhóm | | | |
+| CP4 Research | Dùng AI mở và kiểm ba link trong bảng research của nhóm | Cả ba link STACK, Hypothesis, MathDebugger đều mở được và nội dung khớp với phần nhóm trích | AI chỉ kiểm được link còn sống, không tự đánh giá được nhận định của nhóm có sát hay không | Nhờ Giang xác nhận lại nội dung trích đúng với nguồn |
+| CP5 Quy trình | AI chỉ ra checklist CP8 yêu cầu quy trình tương lai phải có phương án quay về, thứ đang thiếu | Đúng là mục bắt buộc, thiếu là bị trừ 3 điểm | Không có gì sai, quy trình của Vũ giữ nguyên | Thêm một dòng phương án quay về viết theo quy trình bảy bước nhóm đã có |
+| CP5–6 Problem Statement | AI soạn nháp v1 từ v0 và bảng trước sau của nhóm đã viết | Ghép được các số liệu nhóm đã có thành metric có baseline và target cụ thể | AI viết trơn tru quá, dễ mất cách nói của nhóm | Kiểm lại từng trường, sửa lại câu chữ theo cách nhóm nói, nhóm tự chốt |
+| CP6 Mức can thiệp / quyết định | AI soạn nháp phần so sánh bốn mức, AI Canvas và PAIR dựa trên quy trình và PS v0 của nhóm | Trả lời rõ được vì sao Rule không đủ cho phần đọc lời giải tiếng tự nhiên | AI không tự chốt quyết định thay nhóm được, phần đó vẫn trống | Đọc lại nháp, giữ phần lập luận hợp lý, phần quyết định để nhóm chốt ở mục 8 |
 
 ---
 
