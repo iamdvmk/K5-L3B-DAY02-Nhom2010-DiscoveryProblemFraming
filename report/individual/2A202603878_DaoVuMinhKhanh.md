@@ -130,15 +130,16 @@ HIỆN TẠI — 90 phút
 
 ### Card muốn pitch nhất
 
-- Card số: 
-- Vì sao:
-- Câu hỏi muốn nhóm phản biện:
+- Card số: 1
+- Vì sao: Vấn đề thực tế, bản thân từng gặp phải            
+- Câu hỏi muốn nhóm phản biện: Nhu cầu có thể không thực sự đủ lớn.
 
 ### AI đã phản biện card thế nào
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| | | |
+| Chưa chứng minh được việc chỉnh sửa CV theo từng JD thực sự tốn nhiều thời gian. | Đồng ý | Bổ sung hướng kiểm chứng bằng cách phỏng vấn người tìm việc và đo thời gian trung bình để điều chỉnh CV cho một JD. |
+| Có nguy cơ AI tự thêm kỹ năng, kinh nghiệm hoặc thành tích không đúng với thực tế của ứng viên. | Đồng ý | Bổ sung Boundary: AI chỉ được sử dụng thông tin có trong CV gốc hoặc thông tin được ứng viên xác nhận, không tự bịa đặt kinh nghiệm, kỹ năng hay thành tích. |
 
 ---
 
@@ -146,15 +147,15 @@ HIỆN TẠI — 90 phút
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
+| Pitch Problem Card | Thuyết trình về các problem | Đóng góp xây dựng bài |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Problem chứa các từ khóa solution-like | Sửa đổi hoàn thiện vấn đề |
+| Nhận phản biện | Câu hỏi tôi nhận được: Nhu cầu của nhóm người tìm việc | Tôi đã sửa gì: Không |
+| Gom cluster / cây OST | X | có hỗ trợ |
+| Chọn candidate problem | X | Có hỗ trợ |
+| Kiểm chứng / research | Không | |
+| Quy trình nhóm | Hoàn thiện quy trình | |
 | Problem Statement | | |
-| Mức can thiệp AI | | |
+| Mức can thiệp AI | Cao | |
 | Quyết định | | |
 
 ---
@@ -176,19 +177,19 @@ HIỆN TẠI — 90 phút
 
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
-**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?** Học được cách nêu vấn đề, tư duy phản biện
 
-**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?** Có, nhóm nhận ra ngay bởi vì có những từ khóa như "tự động", sửa bằng cách loại bỏ những từ khóa đó.
 
-**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.** Không
 
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?** Không
 
-**6.5. Điều khó nhất khi viết Problem Statement là gì?**
+**6.5. Điều khó nhất khi viết Problem Statement là gì?** Là tìm câu chữ phù hợp để dễ thuyết phục người nghe
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình. Nhóm đã tự nghĩ ra 5 problem mỗi người rồi từ đó mỗi người đề xuất ra 3 problem để cả nhóm phản biện. Khi phản biện, mỗi người tự diễn giải ý kiến của mình và trả lời các câu hỏi. Sau đó chọn ra problem candidate để deep-dive, tạo quick problem card, tìm hiểu quy trình, xây dựng metric đánh giá.
 
 ---
 

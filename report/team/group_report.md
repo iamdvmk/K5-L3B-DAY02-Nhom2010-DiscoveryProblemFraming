@@ -18,27 +18,19 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | Minh Khánh | Khi chuẩn bị CV để ứng tuyển nhiều vị trí, tôi muốn chỉnh sửa CV nhanh theo từng JD để không phải viết lại gần như từ đầu cho mỗi công việc. | Người ứng tuyển nhiều công ty trong cùng một khoảng thời gian. | | Nhu cầu thực sự đến đâu? |
-| 2 | Minh Khánh | Khi muốn mua một sản phẩm, tôi muốn hiểu nhanh sản phẩm nào phù hợp với nhu cầu để không phải đọc hàng chục bài review. | Người tiêu dùng thường xuyên mua hàng qua mạng | | |
-| 3 | Minh Khánh | Khi tự học một môn có nhiều kiến thức và deadline, tôi muốn có cách theo dõi những nội dung đã học và chưa hiểu để không phải liên tục xem lại toàn bộ tài liệu. | Người học đang ôn tập, chuẩn bị lượng lớn kiến thức | | |
-| 4 | Vũ | Khi làm dự án, tôi muốn tổng hợp tài liệu để 
-hiểu cách làm sản phẩm. | Intern tìm thông tin, 
-Senior/Lead đưa tài liệu | | |
-| 5 | Vũ | Khi tài liệu công ty được cập nhật, tôi muốn 
-biết phần nào thay đổi so với bản cũ, 
-để không làm theo thông tin lỗi thời.| Intern và Developers 
-được quan sát 
-kiểm tra thông tin | | |
-| 6 | Vũ | Khi được giao một tài liệu dài, tôi muốn nắm 
-phần liên quan đến task của mình, 
-để bắt tay làm mà không phải đọc hết. | Các Intern khi tìm hiểu
-tài liệu được giao | | |
-| 7 | Quốc Khánh | Khi nhận đề tài nghiên cứu khoa học, tôi muốn nắm được ý chính và cách làm của paper tiếng Anh dài hàng chục trang, để biết được phương pháp và kết quả mà không phải đọc dính từng trang một| Sinh viên làm nghiên cứu khoa học hoặc tự tìm hiểu chủ đề mới | | |
-| 8 | Quốc Khánh |  Khi kỳ thi kết thúc môn học sắp đến, tôi muốn chọn lọc được những phần quan trọng nhất đã học trong kỳ về cùng một chỗ, để ôn thi có trọng tâm thay vì mở lại từng slide từ đầu| Sinh viên ôn thi cuối kỳ | | |
-| 9 | Quốc Khánh | Khi giữa tuần mà các thành viên trong nhóm project chưa báo tiến độ, tôi muốn biết phần của ai đã xong đến đâu, để không phải nhắn tin hỏi từng người nhiều lần | Trưởng nhóm project | | |
-| 10 | Giang | Khi phân tích các báo cáo tai nạn giao thông, tôi muốn trích xuất 11 trường thông tin quan trọng (về điều kiện môi trường, hạ tầng giao thông và các phương tiện liên quan), đồng thời gán cho mỗi trường một giá trị thuộc tập giá trị định trước để chuyển đổi nội dung báo cáo thành dữ liệu có cấu trúc và nhất quán. | Sinh viên nghiên cứu, nhà nghiên cứu xe tự hành | | |
-| 11 | Giang | Khi đưa feed back cho các label của Math Expert, tôi muốn tự động kiểm tra tính đúng sai, logic của lời giải, ngữ pháp và các trường hợp biên trong code để phát hiện lỗi nhanh chóng, giảm thời gian đọc và rà soát thủ công.| Auditor | | |
-| 12 | Giang | Khi muốn ứng tuyển một vị trí, tôi muốn điều chỉnh CV phù hợp với yêu cầu trong JD để làm nổi bật những kỹ năng và kinh nghiệm liên quan, tăng mức độ phù hợp của hồ sơ với vị trí ứng tuyển. | Người tìm việc, đặc biệt là sinh viên mới ra trường | | |
+| 1 | Minh Khánh | Khi chuẩn bị CV để ứng tuyển nhiều vị trí, tôi muốn chỉnh sửa CV nhanh theo từng JD để không phải viết lại gần như từ đầu cho mỗi công việc. | Người ứng tuyển nhiều công ty trong cùng một khoảng thời gian. | Tốn 15-20 phút sửa mỗi CV | Nhu cầu thực sự đến đâu? |
+| 2 | Minh Khánh | Khi muốn mua một sản phẩm, tôi muốn hiểu nhanh sản phẩm nào phù hợp với nhu cầu để không phải đọc hàng chục bài review. | Người tiêu dùng thường xuyên mua hàng qua mạng | Tốn 15-20 phút đọc, xem review qua nhiều kênh khác nhau | |
+| 3 | Minh Khánh | Khi tự học một môn có nhiều kiến thức và deadline, tôi muốn có cách theo dõi những nội dung đã học và chưa hiểu để không phải liên tục xem lại toàn bộ tài liệu. | Người học đang ôn tập, chuẩn bị lượng lớn kiến thức | Tốn 5-15 phút tùy nội dung cần ôn tập | Khó đánh giá phần kiến thức nào là chưa hiểu hoặc chưa biết ? |
+| 4 | Vũ | Khi làm dự án, tôi muốn tổng hợp tài liệu để hiểu cách làm sản phẩm. | Intern tìm thông tin, Senior/Lead đưa tài liệu | 40-85 phút / dự án | Đã có nhiều giải pháp có sẵn ? |
+| 5 | Vũ | Khi tài liệu công ty được cập nhật, tôi muốn biết phần nào thay đổi so với bản cũ, để không làm theo thông tin lỗi thời.| Intern và Developers được quan sát kiểm tra thông tin | "35 - 60 phút / mỗi lần công ty thay đổi thông tin"| |
+| 6 | Vũ | Khi được giao một tài liệu dài, tôi muốn nắm phần liên quan đến task của mình, 
+để bắt tay làm mà không phải đọc hết. | Các Intern khi tìm hiểu tài liệu được giao | khoảng 30-60 phút / lần | |
+| 7 | Quốc Khánh | Khi nhận đề tài nghiên cứu khoa học, tôi muốn nắm được ý chính và cách làm của paper tiếng Anh dài hàng chục trang, để biết được phương pháp và kết quả mà không phải đọc dính từng trang một| Sinh viên làm nghiên cứu khoa học hoặc tự tìm hiểu chủ đề mới | Một paper 10 đến 20 trang mất khoảng 1 đến 2 tiếng mới đọc hiểu, mỗi tuần phải đọc vài paper, nhiều bài phải đọc lại 2 đến 3 lần vì quên mất chi tiết | Đã có giải pháp ? |
+| 8 | Quốc Khánh |  Khi kỳ thi kết thúc môn học sắp đến, tôi muốn chọn lọc được những phần quan trọng nhất đã học trong kỳ về cùng một chỗ, để ôn thi có trọng tâm thay vì mở lại từng slide từ đầu| Sinh viên ôn thi cuối kỳ | Mỗi môn thi mất khoảng 3 đến 4 buổi tối để gom và chép lại phần quan trọng từ slide, ghi chú và bài tập trên lớp, mà vẫn hay bỏ sót một chương nào đó | |
+| 9 | Quốc Khánh | Khi giữa tuần mà các thành viên trong nhóm project chưa báo tiến độ, tôi muốn biết phần của ai đã xong đến đâu, để không phải nhắn tin hỏi từng người nhiều lần | Trưởng nhóm project | Trong đợt project vừa rồi tuần nào mình cũng mất 30 đến 45 phút nhắn tin đuổi tiến độ, có tuần phải nhắc 2 lần | | |
+| 10 | Giang | Khi phân tích các báo cáo tai nạn giao thông, tôi muốn trích xuất 11 trường thông tin quan trọng (về điều kiện môi trường, hạ tầng giao thông và các phương tiện liên quan), đồng thời gán cho mỗi trường một giá trị thuộc tập giá trị định trước để chuyển đổi nội dung báo cáo thành dữ liệu có cấu trúc và nhất quán. | Sinh viên nghiên cứu, nhà nghiên cứu xe tự hành | Mỗi báo cáo cần 12-15 phút để đọc và trích xuất. Quy mô nghiên cứu có thể cần tới 1000 báo cáo. | |
+| 11 | Giang | Khi đưa feed back cho các label của Math Expert, tôi muốn tự động kiểm tra tính đúng sai, logic của lời giải, ngữ pháp và các trường hợp biên trong code để phát hiện lỗi nhanh chóng, giảm thời gian đọc và rà soát thủ công.| Auditor | Mỗi bài kiểm tra 3 tiêu chí, mất khoảng 10 phút với bài thông thường và có thể 20-30 phút với bài toán có code hoặc lập luận phức tạp | |
+| 12 | Giang | Khi muốn ứng tuyển một vị trí, tôi muốn điều chỉnh CV phù hợp với yêu cầu trong JD để làm nổi bật những kỹ năng và kinh nghiệm liên quan, tăng mức độ phù hợp của hồ sơ với vị trí ứng tuyển. | Người tìm việc, đặc biệt là sinh viên mới ra trường | Số JD đọc mỗi tuần 10-15, thời gian đọc và chỉnh sửa CV 15-30 phút | |
 
 ### 2.2. Cluster
 
@@ -195,37 +187,11 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 | Trường | Nội dung |
 |---|---|
 | **Actor** | Auditor – người chịu trách nhiệm kiểm tra và đánh giá chất lượng feedback cho các label của Math Expert. |
-| **Quy trình** | 1. Nhận feedback từ các label của Math Expert. 
-
- 2. Đọc và kiểm tra tính đúng sai của lời giải. 
-
- 3. Đánh giá tính logic và nhất quán trong các bước giải. 
-
- 4. Kiểm tra ngữ pháp, cách diễn đạt. 
-
- 5. Kiểm tra code và các trường hợp biên (edge cases) nếu có. 
-
- 6. Tổng hợp lỗi và đưa ra feedback hoặc kết luận đánh giá.|
+| **Quy trình** | 1. Nhận feedback từ các label của Math Expert. 2. Đọc và kiểm tra tính đúng sai của lời giải. 3. Đánh giá tính logic và nhất quán trong các bước giải. 4. Kiểm tra ngữ pháp, cách diễn đạt. 5. Kiểm tra code và các trường hợp biên (edge cases) nếu có. 6. Tổng hợp lỗi và đưa ra feedback hoặc kết luận đánh giá.|
 | **Bottleneck** | 	Auditor phải kiểm tra thủ công nhiều tiêu chí khác nhau trên từng feedback. Việc rà soát từng bước suy luận, tính đúng sai và các trường hợp biên trong code tốn thời gian, đồng thời có nguy cơ bỏ sót lỗi hoặc đánh giá thiếu nhất quán. |
 | **Impact** | 	Giảm thời gian kiểm tra feedback cho Auditor; tăng khả năng phát hiện lỗi; nâng cao độ chính xác và tính nhất quán trong quá trình đánh giá chất lượng label của Math Expert. |
-| **Success Metric** (baseline → target, cách đo) | - Review Time: Đo thời gian trung bình kiểm tra một feedback trước và sau khi có AI hỗ trợ. 
-
- - Error Detection Rate: Tỷ lệ lỗi được phát hiện trên tổng số lỗi đã được xác định trong bộ dữ liệu chuẩn. 
-
- - Accuracy: Tỷ lệ kết quả đánh giá đúng so với kết quả tham chiếu do Auditor có kinh nghiệm xác nhận. 
-
- Baseline: Đo bằng quy trình kiểm tra thủ công hiện tại. 
-
- Target đề xuất: Giảm 30% thời gian review, đồng thời duy trì độ chính xác phát hiện lỗi từ 90% trở lên. Các target cần được điều chỉnh sau khi đo baseline và thử nghiệm. |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | - AI chỉ đóng vai trò hỗ trợ kiểm tra và đưa ra cảnh báo, không tự quyết định cuối cùng về chất lượng feedback. 
-
- - Không tự ý sửa hoặc thay đổi nội dung feedback gốc. 
-
- - Không tự đưa ra kết luận đúng/sai khi không đủ dữ liệu hoặc không có cơ sở kiểm chứng. 
-
- - Không tự động phê duyệt hoặc loại bỏ label. 
-
- - HITL: Auditor phải kiểm tra lại các trường hợp AI không chắc chắn, phát hiện lỗi logic phức tạp, có nhiều cách giải hợp lệ, lỗi liên quan đến kiến thức toán chuyên sâu hoặc các trường hợp AI và đáp án tham chiếu không thống nhất. |
+| **Success Metric** (baseline → target, cách đo) | - Review Time: Đo thời gian trung bình kiểm tra một feedback trước và sau khi có AI hỗ trợ. Error Detection Rate: Tỷ lệ lỗi được phát hiện trên tổng số lỗi đã được xác định trong bộ dữ liệu chuẩn. Accuracy: Tỷ lệ kết quả đánh giá đúng so với kết quả tham chiếu do Auditor có kinh nghiệm xác nhận. Baseline: Đo bằng quy trình kiểm tra thủ công hiện tại. Target đề xuất: Giảm 30% thời gian review, đồng thời duy trì độ chính xác phát hiện lỗi từ 90% trở lên. Các target cần được điều chỉnh sau khi đo baseline và thử nghiệm. |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | - AI chỉ đóng vai trò hỗ trợ kiểm tra và đưa ra cảnh báo, không tự quyết định cuối cùng về chất lượng feedback. Không tự ý sửa hoặc thay đổi nội dung feedback gốc. Không tự đưa ra kết luận đúng/sai khi không đủ dữ liệu hoặc không có cơ sở kiểm chứng. Không tự động phê duyệt hoặc loại bỏ label. HITL: Auditor phải kiểm tra lại các trường hợp AI không chắc chắn, phát hiện lỗi logic phức tạp, có nhiều cách giải hợp lệ, lỗi liên quan đến kiến thức toán chuyên sâu hoặc các trường hợp AI và đáp án tham chiếu không thống nhất. |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
