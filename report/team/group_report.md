@@ -25,10 +25,10 @@
 | 5 | Vũ | Khi tài liệu công ty được cập nhật, tôi muốn biết phần nào thay đổi so với bản cũ, để không làm theo thông tin lỗi thời.| Intern và Developers được quan sát kiểm tra thông tin | "35 - 60 phút / mỗi lần công ty thay đổi thông tin"| |
 | 6 | Vũ | Khi được giao một tài liệu dài, tôi muốn nắm phần liên quan đến task của mình, để bắt tay làm mà không phải đọc hết. | Các Intern khi tìm hiểu tài liệu được giao | khoảng 30-60 phút / lần | |
 | 7 | Quốc Khánh | Khi nhận đề tài nghiên cứu khoa học, tôi muốn nắm được ý chính và cách làm của paper tiếng Anh dài hàng chục trang, để biết được phương pháp và kết quả mà không phải đọc dính từng trang một| Sinh viên làm nghiên cứu khoa học hoặc tự tìm hiểu chủ đề mới | Một paper 10 đến 20 trang mất khoảng 1 đến 2 tiếng mới đọc hiểu, mỗi tuần phải đọc vài paper, nhiều bài phải đọc lại 2 đến 3 lần vì quên mất chi tiết | Đã có giải pháp ? |
-| 8 | Quốc Khánh |  Khi kỳ thi kết thúc môn học sắp đến, tôi muốn chọn lọc được những phần quan trọng nhất đã học trong kỳ về cùng một chỗ, để ôn thi có trọng tâm thay vì mở lại từng slide từ đầu| Sinh viên ôn thi cuối kỳ | Mỗi môn thi mất khoảng 3 đến 4 buổi tối để gom và chép lại phần quan trọng từ slide, ghi chú và bài tập trên lớp, mà vẫn hay bỏ sót một chương nào đó | |
-| 9 | Quốc Khánh | Khi giữa tuần mà các thành viên trong nhóm project chưa báo tiến độ, tôi muốn biết phần của ai đã xong đến đâu, để không phải nhắn tin hỏi từng người nhiều lần | Trưởng nhóm project | Trong đợt project vừa rồi tuần nào mình cũng mất 30 đến 45 phút nhắn tin đuổi tiến độ, có tuần phải nhắc 2 lần | | |
+| 8 | Quốc Khánh |  Khi kỳ thi kết thúc môn học sắp đến, tôi muốn chọn lọc được những phần quan trọng nhất đã học trong kỳ về cùng một chỗ, để ôn thi có trọng tâm thay vì mở lại từng slide từ đầu| Sinh viên ôn thi cuối kỳ | Mỗi môn thi mất khoảng 3 đến 4 buổi tối để gom và chép lại phần quan trọng; bước nặng nhất là đọc lại toàn bộ slide để tự đoán phần nào ra thi rồi gõ lại hết, chiếm 3 tiếng rưỡi trong 5 tiếng chuẩn bị một môn | Câu hỏi nhận được: phần "quan trọng" do ai quyết và sai sót đo thế nào (Minh Khánh hỏi) |
+| 9 | Quốc Khánh | Khi giữa tuần mà các thành viên trong nhóm project chưa báo tiến độ, tôi muốn biết phần của ai đã xong đến đâu, để không phải nhắn tin hỏi từng người nhiều lần | Trưởng nhóm project | Trong đợt project vừa rồi tuần nào mình cũng mất 30 đến 45 phút nhắn tin đuổi tiến độ, có tuần phải nhắc 2 lần | |
 | 10 | Giang | Khi phân tích các báo cáo tai nạn giao thông, tôi muốn trích xuất 11 trường thông tin quan trọng (về điều kiện môi trường, hạ tầng giao thông và các phương tiện liên quan), đồng thời gán cho mỗi trường một giá trị thuộc tập giá trị định trước để chuyển đổi nội dung báo cáo thành dữ liệu có cấu trúc và nhất quán. | Sinh viên nghiên cứu, nhà nghiên cứu xe tự hành | Mỗi báo cáo cần 12-15 phút để đọc và trích xuất. Quy mô nghiên cứu có thể cần tới 1000 báo cáo. | |
-| 11 | Giang | Khi đưa feed back cho các label của Math Expert, tôi muốn tự động kiểm tra tính đúng sai, logic của lời giải, ngữ pháp và các trường hợp biên trong code để phát hiện lỗi nhanh chóng, giảm thời gian đọc và rà soát thủ công.| Auditor | Mỗi bài kiểm tra 3 tiêu chí, mất khoảng 10 phút với bài thông thường và có thể 20-30 phút với bài toán có code hoặc lập luận phức tạp | |
+| 11 | Giang | Khi đưa feed back cho các label của Math Expert, tôi muốn tự động kiểm tra tính đúng sai, logic của lời giải, ngữ pháp và các trường hợp biên trong code để phát hiện lỗi nhanh chóng, giảm thời gian đọc và rà soát thủ công.| Auditor | Mỗi bài kiểm tra 3 tiêu chí, mất khoảng 10 phút với bài thông thường và có thể 20-30 phút với bài toán có code hoặc lập luận phức tạp | Câu hỏi nhận được: chữ "tự động kiểm tra" trong job story là giải pháp đội lốt, phải mô tả lại bằng nỗi đau; actor auditor có người thật để phỏng vấn không (Quốc Khánh hỏi) |
 | 12 | Giang | Khi muốn ứng tuyển một vị trí, tôi muốn điều chỉnh CV phù hợp với yêu cầu trong JD để làm nổi bật những kỹ năng và kinh nghiệm liên quan, tăng mức độ phù hợp của hồ sơ với vị trí ứng tuyển. | Người tìm việc, đặc biệt là sinh viên mới ra trường | Số JD đọc mỗi tuần 10-15, thời gian đọc và chỉnh sửa CV 15-30 phút | |
 
 ### 2.2. Cluster
@@ -78,6 +78,11 @@ feedback chính xác, logic và nhất quán.
 
 **Vì sao chọn:** Actor cụ thể, quy trình rõ ràng, pain có ý nghĩa, impact có thể đo lường
 
+**Lý do loại hai candidate còn lại trong shortlist:**
+
+- Đọc hiểu paper nghiên cứu (34 điểm, bằng candidate được chọn): điểm bằng nhau nhưng bài paper khó kiểm chứng hơn, vì quanh lớp ít người thật sự phải đọc paper thường xuyên nên CP4 khó tìm đủ người phỏng vấn; bài Math Expert có người làm việc này thật sự và có dữ liệu thật để xem.
+- Trích xuất thông tin tai nạn giao thông (32 điểm): actor là nhà nghiên cứu xe tự hành, nằm ngoài phạm vi quanh mình nên không tìm được người để phỏng vấn trong buổi; quy mô tới 1000 báo cáo cũng quá lớn so với một buổi lab.
+
 ---
 
 ## 3. Kiểm chứng + research giải pháp đã có (CP4)
@@ -86,20 +91,29 @@ feedback chính xác, logic và nhất quán.
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 | Nhiều auditor ngoài người kể ban đầu cũng mất khoảng 10-30 phút cho một bài, pain không phải của riêng một người | Value | 5 | 1 | Kiểm chứng trước |
+| 2 | Có bộ feedback mẫu kèm lỗi đã xác định trước, đủ để làm bộ bài test đánh giá AI | Feasibility | 4 | 2 | |
+| 3 | Công ty cho phép dùng công cụ AI trên dữ liệu label nội bộ | Viability | 4 | 1 | Kiểm chứng trước |
+| 4 | Auditor muốn AI hỗ trợ soạn nháp chứ không muốn mất quyền chốt cuối | Value | 4 | 2 | |
+| 5 | AI đọc được cấu trúc label gồm đề, lời giải, code và testcase một cách nhất quán | Feasibility | 4 | 2 | |
+| 6 | Auditor hiểu và sửa được bản nháp feedback do AI soạn | Usability | 3 | 2 | |
 
 *Điền 4–6 giả định; xóa dòng thừa.*
 
-Giả định nhóm kiểm chứng trong buổi này:
+Giả định nhóm kiểm chứng trong buổi này: giả định số 1 (pain thật và phổ biến giữa các auditor) và giả định số 3 (được phép dùng AI trên dữ liệu nội bộ), vì đây là hai giả định quan trọng nhất mà bằng chứng hiện có mỏng nhất. Nếu giả định số 3 sai thì cả bài quay về hướng No AI hoặc Rule chạy nội bộ, không dùng AI.
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Cách đã dùng: **Phỏng vấn** (dự kiến 2-3 auditor thật, không phỏng vấn thành viên nhóm mình theo quy định của lab)
+
+Bộ câu hỏi phỏng vấn đã soạn theo ba luật Mom Test (hỏi chuyện đã xảy ra, không hỏi giả định; hỏi cuộc sống của họ, không hỏi ý tưởng của mình; nói ít nghe nhiều):
+
+- Lần gần nhất bạn rà một bài label Math Expert là khi nào? Kể lại từng bước bạn đã làm từ lúc mở bài đến lúc gửi feedback.
+- Bước nào mất nhiều thời gian nhất? Một bài bình thường mất khoảng bao lâu, còn bài có code phức tạp thì sao?
+- Bạn đã từng bỏ sót lỗi mà về sau mới phát hiện chưa? Lúc đó chuyện gì xảy ra, ai phát hiện ra lỗi đó?
+- Bạn đã từng thử cách nào để rà nhanh hơn chưa, ví dụ checklist, script hay nhờ bạn khác review hộ? Kết quả thế nào?
+
+Lưu ý ghi nhận: nếu auditor trả lời bài thường chỉ mất vài phút, đó là tín hiệu phản bác, phải ghi lại và nhóm thu hẹp lại problem hoặc đổi target.
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
 
@@ -116,9 +130,13 @@ Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
+| Phỏng vấn auditor | | | |
+| Phỏng vấn auditor | | | |
+| Phỏng vấn auditor | | | |
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
+
+Trước khi kiểm chứng, problem đã được viết lại từ cụm "tự động kiểm tra" (solution đội lốt) thành nỗi đau thật là auditor mất nhiều thời gian rà từng bài để tìm lỗi logic, ngữ pháp và trường hợp biên, theo phản biện ở CP3. Phần thay đổi sau khi phỏng vấn xong sẽ cập nhật tại đây.
 
 ### 3.3. Research giải pháp đã có
 
@@ -169,6 +187,8 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 → [4 Auditor gửi feedback hoàn chỉnh: 0.5'] ← CON NGƯỜI
 ```
 
+Phương án quay về: nếu AI soạn nháp kém, bỏ sót nhiều lỗi hoặc ngừng chạy thì auditor quay về quy trình bảy bước thủ công ở bảng 4.1, ưu tiên xử lý các template đến hạn gần nhất trước để không trễ tiến độ.
+
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
@@ -202,38 +222,38 @@ Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
+Bài của nhóm nằm ở ô: độ mơ hồ thấp nhân độ phức tạp cao.
 
-Vì sao:
+Vì sao: đầu ra có đúng sai rõ theo bộ tiêu chí cố định (đúng sai toán học, logic lời giải, ngữ pháp, trường hợp biên của code), không phải kiểu bài chấp nhận nhiều phiên bản như viết văn. Nhưng quy trình gồm nhiều bước nối tiếp và nhiều loại đầu vào khác nhau (lời giải tiếng tự nhiên, code, testcase), nên độ phức tạp cao. Theo ma trận, ô này thường đủ với Workflow nhiều bước rõ ràng, chưa chắc cần Agent.
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** (sửa quy trình) | Chuẩn hóa checklist ba tiêu chí, dùng mẫu feedback có sẵn các ô vị trí, lý do, hướng sửa | Đủ khi pain chủ yếu do quy trình rời rạc | Không giảm được phần đọc và viết feedback, vốn là bottleneck chính | Không |
+| **Rule** | Linter chạy check cú pháp code, script chạy testcase cố định, template feedback dựng sẵn | Chỉ đủ cho phần code có điều kiện khai báo trước | Không đọc được lập luận lời giải bằng tiếng tự nhiên, bỏ sót lỗi logic | Không đủ dùng riêng |
+| **Workflow** | Các bước định sẵn: script gom template và chạy check cơ bản, AI phân tích lời giải, đối chiếu testcase và soạn nháp feedback, auditor review rồi tự gửi | Các bước kiểm tra cố định từ trước, AI chỉ làm một bước trong chuỗi | AI bỏ sót edge case hoặc hiểu sai logic toán, xử lý bằng boundary và auditor kiểm lại | Có |
+| **Agent** | AI tự quyết kiểm gì tiếp theo, tự mở file, tự lặp đến khi xong | Chỉ cần khi các bước không định sẵn được | Khó đặt boundary, khó truy xem AI sai ở đâu, chi phí và độ trễ cao hơn | Không |
 
-**Mức chọn:**
+**Mức chọn:** Workflow
 
-**Vì sao không chọn mức đơn giản hơn:**
+**Vì sao không chọn mức đơn giản hơn:** Rule chỉ xử lý được phần code theo điều kiện khai báo trước, còn bottleneck thật là bước đọc lập luận lời giải và viết feedback bằng tiếng tự nhiên, phần đó Rule không làm được. No AI đã thử qua dạng checklist ba tiêu chí như hiện tại nhưng tổng thời gian 8-12 phút một template vẫn nằm ở bước đọc và viết, chưa giảm được. Còn Agent không cần thiết vì các bước kiểm tra đã cố định từ trước, không có bước nào cần AI tự quyết làm gì tiếp theo; mỗi mức lên thêm là thêm chi phí, độ trễ và cách hỏng mới.
 
 ### 6.3. AI Canvas rút gọn
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction** — AI dự đoán / tạo ra gì? | AI đọc đề, lời giải, code và testcase rồi dự đoán chỗ nào nghi ngờ có lỗi logic, ngữ pháp hoặc trường hợp biên, kèm soạn nháp feedback giải thích cho từng chỗ |
+| **Judgment** — con người cân nhắc, quyết định gì? | Auditor cân nhắc nhận định của AI có đúng không, lỗi có đáng ghi không, mức độ nghiêm trọng ra sao và cách viết feedback đã rõ ràng chưa |
+| **Action** — hành động cuối cùng là gì, ai làm? | Auditor sửa bản nháp và tự tay gửi feedback cho Expert; AI không gửi |
+| **Outcome** — đo kết quả bằng gì? | Thời gian trung bình một template giảm từ 8-12 phút xuống dưới 5 phút, tỷ lệ bắt được lỗi trong bộ bài có lỗi đã biết trước giữ từ 90% trở lên |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | Mỗi lần chạy cần template label gồm đề, lời giải mẫu, code, testcase cùng bộ tiêu chí kiểm tra; dữ liệu này có sẵn trong hệ thống label |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? | So sánh bản nháp AI với feedback cuối cùng auditor gửi; mỗi chỗ auditor phải sửa là tín hiệu để cải thiện cách soạn nháp |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng: nhóm chọn augment, thể hiện ngay ở boundary trong PS v0 và quy trình tương lai là AI không tự gửi, auditor chốt cuối cùng. Giả định auditor muốn giảm thời gian chứ không muốn mất kiểm soát chất lượng sẽ được chốt qua phỏng vấn ở CP4.
+- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào: bỏ sót tệ hơn, vì feedback có lỗi đi thẳng xuống người học bên dưới label, còn báo nhầm chỉ làm auditor tốn thêm vài phút kiểm lại. Thiết kế xử lý: AI nghi ngờ chỗ nào thì flag kèm vị trí cụ thể thay vì im lặng bỏ qua, và auditor bắt buộc kiểm kỹ phần code cùng các chỗ AI không chắc chắn trước khi gửi.
 
 ---
 
@@ -241,29 +261,33 @@ Vì sao:
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Actor** | Auditor của Math Expert, người chịu trách nhiệm cuối cùng về chất lượng feedback cho các label. |
+| **Quy trình** | Bốn bước ở mục 4.2: script gom template và chạy check cơ bản, AI phân tích lời giải đối chiếu testcase và soạn nháp feedback, auditor review và chỉnh, auditor tự gửi. |
+| **Bottleneck** | Đọc lập luận lời giải và viết feedback, hai phần chiếm phần lớn thời gian 8-12 phút hiện tại cho một template. |
+| **Impact** | Nếu không giải thì thời gian một template giữ nguyên ở mức 8-12 phút, chất lượng feedback phụ thuộc vào thể trạng và kinh nghiệm từng auditor tại thời điểm rà bài. |
+| **Success Metric** (baseline → target, cách đo) | Baseline: 8-12 phút một template, lấy từ bảng before/after ở mục 4. Target: dưới 5 phút một template, tỷ lệ bắt được lỗi trong bộ bài có lỗi đã xác định trước từ 90% trở lên. Cách đo: bấm giờ và chấm kết quả trên 10 template thử nghiệm, so với thời gian auditor làm thủ công cùng bộ bài đó. |
+| **Boundary** | AI không tự gửi feedback, không tự sửa nội dung feedback gốc, không tự chốt đúng sai khi thiếu dữ liệu; các trường hợp AI không chắc chắn, logic phức tạp, nhiều cách giải hợp lệ đều do auditor quyết. |
+| **AI intervention point** | Bước 2 của quy trình tương lai (mục 4.2): AI phân tích lời giải, đối chiếu testcase và soạn nháp feedback cho auditor review. |
+| **Mức chọn** | Workflow |
+| **Rủi ro & người kiểm tra** | Rủi ro AI bỏ sót lỗi hoặc hiểu sai logic: auditor kiểm lại toàn bộ bản nháp trước khi gửi. Rủi ro dữ liệu nội bộ: nhóm xác nhận quy định công ty về việc dùng AI trên dữ liệu label trước khi pilot, người theo dõi là cả nhóm qua mục 3.1. |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+| Success Metric | Baseline ghi chung chung là "quy trình thủ công hiện tại", chưa có số cụ thể | Baseline có số là 8-12 phút một template, cách đo cụ thể là bấm giờ trên 10 template | Metric không có số thì không biết pilot thành hay không, không đo được |
+| AI intervention point | Không có trường này | Ghi rõ AI chen vào ở bước 2 của quy trình tương lai | CP6 bắt buộc chỉ rõ điểm AI can thiệp trong quy trình |
+| Mức chọn | Không có trường này | Workflow | Sau khi so sánh bốn mức ở mục 6, mức đơn giản hơn không đủ, Agent là thừa |
+| Rủi ro & người kiểm tra | Không có trường này | Ghi rõ rủi ro bỏ sót và rủi ro dữ liệu, auditor là người kiểm cuối | Cần người chịu trách nhiệm cuối cùng rõ ràng trước khi có quyết định |
 
 **Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Không bịa nhận định | Mọi nhận định lỗi đều chỉ tới vị trí cụ thể trong đề, lời giải hoặc code | Có nhận định không truy ra được nguồn trong dữ liệu đầu vào |
+| 2 | Bắt được lỗi đã biết | Trong bộ 10 bài có lỗi đã xác định trước, AI flag từ 9 lỗi trở lên | Bỏ sót lỗi logic hoặc trường hợp biên có trong bộ bài |
+| 3 | Báo nhầm ở mức chấp nhận được | Số chỗ AI flag mà auditor xác nhận không có lỗi chiếm dưới 20% số flag | Quá nửa số flag là báo nhầm, khiến auditor phải đi kiểm lại gần như toàn bộ bài |
+| 4 | Nháp đủ định dạng feedback | Mỗi lỗi được soạn đủ ba phần: vị trí, lý do sai, hướng sửa | Thiếu một trong ba phần, hoặc viết chung chung không chỉ được chỗ sai |
 
 ---
 
