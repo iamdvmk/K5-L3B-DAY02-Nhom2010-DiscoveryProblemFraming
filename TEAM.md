@@ -116,3 +116,28 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - Cần cân nhắc quy mô nhu cầu, độ phức tạp, dữ liệu và khả năng triển khai trước khi chọn bài toán.
 - Khi kiểm duyệt label có biến được code, cần xét cả logic lời giải và những bộ số liệu có thể làm phát sinh lỗi.
+
+### NguyenLongVu-2A202603842
+
+**Phần việc phụ trách:**
+
+- Xây dựng Workflow trước/sau
+- Hỗ trợ CP3 (cùng gom cluster, cây OST, bảng chấm điểm), CP6 (hỗ trợ làm mức can thiệp và Problem Statement v1 với Quốc Khánh).
+- Đề xuất rủi ro và ra quyết định
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Pitch 3 ý tưởng liên quan đến tổng hợp, xử lý dữ liệu trong cơ quan khi thực hiện dự án
+- CP5: vẽ quy trình hiện tại (từng bước kèm số phút) và quy trình tương lai (đánh dấu Rule/AI/Người), lập bảng before/after.
+- CP6: chấm 4 rủi ro, kết luận Go/Not Yet/No-Go và đặt ngưỡng dừng.
+- Hỗ trợ CP3: Góp ý chấm điểm
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- Mục CP5. Workflow trc/sau, CP6. Quyết định trong `report/team/group_report.md`.
+- Mục 2-3 trong `report/individual/2A202603842_NguyenLongVu.md`.
+- Commit f1c1fde và 1577cf5
+
+**Điều mình học được từ phần nhóm:**
+
+- Tổng hợp và tiếp thận ý kiến của các thành viên để cùng đưa ra giải pháp, hướng giải quyết vấn đề. 
